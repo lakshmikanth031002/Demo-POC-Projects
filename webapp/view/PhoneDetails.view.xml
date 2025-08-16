@@ -1,0 +1,126 @@
+<mvc:View controllerName="ladera.mobiles.controller.PhoneDetails"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    height="100%">
+    <Page title="" showNavButton="false" class="iphone15Layout" showHeader="false">
+        <content>
+            <HBox>
+                <VBox height="70%" width="50%" justifyContent="Center" alignItems="Center" class="sapUiMediumMarginTop">
+                    <Image id="iPhoneFullImage" src="{phoneData>/0/imageUrl}" alt="iPhone 15 Back" width="400px" height="400px"/>
+                        <HBox justifyContent="Center" alignItems="Center" height="100px">
+                            <Button width="150px" text="Ram/Storage" class="sapUiSmallMarginEnd"  press="onRamStoragePress"/>
+                            <Button width="150px" text="Compare" class="sapUiSmallMarginEnd" press="onComparePress"/>
+                        </HBox>
+                </VBox>
+                <VBox width="70%" height="100px" class="sapUiMediumMargin">
+                <VBox justifyContent="Center" alignItems="Center" class="sapUiMediumMargin">
+                    <Title text="Apple {phoneData>/modelName}" class="specTitle"/>
+                    <Text text="Get Upto" class="getUptoText"/>
+                    <Text id="AmountField" text="{SelectedModelPrice>/}" class="priceText"/>
+                </VBox>
+
+            <ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" backgroundDesign="Translucent"
+                        class="sapUiResponsivePadding--header">
+        		<headerContainer>
+			        <IconTabBar id="itb1" selectedKey="key3" upperCase="true"
+                                class="sapUiResponsivePadding--header sapUiResponsivePadding--content">
+				        <items>
+				            <IconTabFilter text="Key Spec" key="key1">
+                                <Table id="iphoneSpecTable" items="{phoneData>/0/keyspec}"
+                                        class="specTable">                
+                                    <columns>
+                                        <Column width="150px"></Column>
+                                        <Column width="250px"></Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{phoneData>category}" class="Category"/>
+                                                <Text text="{phoneData>value}"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                 </Table>
+
+				            </IconTabFilter>
+				            <IconTabFilter text="General" key="key2">
+                                <Table id="iphoneSpecTable1" items="{phoneData>/0/general}"
+                                        class="specTable">
+                                    <columns>
+                                        <Column width="150px"></Column>                                              
+                                        <Column width="250px"></Column>    
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{phoneData>category}" class="Category"/>
+                                                <Text text="{phoneData>value}"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>			
+				            </IconTabFilter>
+				            <IconTabFilter text="Display" key="key3">	
+                                <Table id="iphoneSpecTable2" items="{phoneData>/0/display}"
+                                    class="specTable">
+                                    <columns>
+                                        <Column width="150px"></Column>
+                                        <Column width="250px"></Column>                                    
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{phoneData>category}" class="Category"/>
+                                                <Text text="{phoneData>value}"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+				            </IconTabFilter>
+				            <IconTabFilter text="Design" key="key4">			
+                                <Table id="iphoneSpecTable3" items="{phoneData>/0/design}"
+                                    class="specTable">
+                                    <columns>
+                                        <Column width="150px"></Column>
+                                        <Column width="250px"></Column>   
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{phoneData>category}" class="Category"/>
+                                                <Text text="{phoneData>value}"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+				            </IconTabFilter>
+                            <IconTabFilter text="Battery" key="key5">
+                                <Table id="iphoneSpecTable4" items="{phoneData>/0/battery}"
+                                    class="specTable">
+                                    <columns>
+                                        <Column width="150px"></Column>
+                                        <Column width="250px"></Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{phoneData>category}" class="Category"/>
+                                                <Text text="{phoneData>value}"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+				            </IconTabFilter>
+				        </items>
+			        </IconTabBar>
+		        </headerContainer>
+	        </ObjectHeader>
+            </VBox>    
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>    

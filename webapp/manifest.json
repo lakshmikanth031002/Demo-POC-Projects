@@ -1,0 +1,137 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "ladera.mobiles",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.4",
+      "toolsId": "9fd21602-96bf-4392-a2e0-c5fda361278f"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.139.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ladera.mobiles.i18n.i18n"
+        }
+      },
+      "Phones" : {
+        "type" : "sap.ui.model.json.JSONModel",
+        "uri" : "model/Phones.json"
+      },
+      "Specification": {
+        "type" : "sap.ui.model.json.JSONModel",
+        "uri" : "model/Specification.json"
+      },
+      "RSPDetails":{
+        "type" : "sap.ui.model.json.JSONModel",
+        "uri" : "model/R-S-PDetails.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "ladera.mobiles.view",
+        "async": true,
+        "viewPath": "ladera.mobiles.view"
+      },
+      "routes": [
+        {
+          "name": "RouteLoginPage",
+          "pattern": ":?query:",
+          "target": [
+            "TargetLoginPage"
+          ]
+        },
+        {
+          "name": "RouteCatalogOrderPage",
+          "pattern": "RouteCatalogOrderPage",
+          "target":  "TargetCatalogOrderPage"
+        },
+        {
+          "name": "RoutePhonePage",
+          "pattern": "RoutePhonePage",
+          "target":  "TargetPhonePage"
+        },
+        {
+          "name": "RoutePhoneDetailsPage",
+          "pattern": "RoutePhoneDetailsPage/{ModelName}",
+          "target":  "TargetPhoneDetailsPage"
+        }
+      ],
+      "targets": {
+        "TargetLoginPage": {
+          "id": "LoginPage",
+          "name": "LoginPage"
+        },
+        "TargetCatalogOrderPage": {
+          "id": "CatalogOrderPage",
+          "name": "CatalogOrderPage"
+        },
+        "TargetPhonePage": {
+          "id": "PhonePage",
+          "name": "PhonePage"
+        },
+        "TargetPhoneDetailsPage": {
+          "id": "PhoneDetails",
+          "name": "PhoneDetails"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "ladera.mobiles.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

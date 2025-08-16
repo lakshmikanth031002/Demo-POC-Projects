@@ -1,0 +1,40 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+<Dialog title="Ram/Storage">
+    <f:SimpleForm>
+        <f:content>
+            <VBox>
+                <Table id="radioButtonTable" items="{phoneModelRSdetails>/}"
+                        mode="SingleSelectLeft" width="400px">
+                    <columns>
+                        <Column>
+                            <Text text="Ram"/>
+                        </Column>                                              
+                        <Column>
+                            <Text text="Storage"/>
+                        </Column>
+                        <Column visible="false">
+                            <Text text="Price"/>
+                        </Column>        
+                    </columns>
+                     <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{phoneModelRSdetails>RAM}"/>
+                                <Text text="{phoneModelRSdetails>Storage}"/>
+                                <Text text="{phoneModelRSdetails>PriceINR}"/>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </VBox>
+        </f:content>
+    </f:SimpleForm>
+    <beginButton>
+        <Button text="Check Price" press="onCheckPrice"/>
+    </beginButton>
+    <endButton>
+    <Button text="Cancel" press="onCancel"/>
+    </endButton>
+</Dialog>
+</core:FragmentDefinition>
+ 

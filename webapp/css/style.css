@@ -1,0 +1,244 @@
+/* Enter your custom styles here */
+html, body, .sapUiBody {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.loginContainer {
+    height: 100%;
+    width: 100%;
+}
+.imagePane {
+    background-color: #f0f0f0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginPane {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.loginForm {
+    width: 80%;
+    max-width: 400px;
+}
+.fullHeightImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tittle {
+color: red ;
+font-family: fantasy;
+}
+
+/* hide the scroll bar and split bar */
+.loginContainer .sapUiLoSplitterBar {
+    display: none !important;
+    width: 0 !important;
+}
+.imagePane, .loginPane {
+    overflow: hidden;
+} 
+/* hide the scroll bar and split bar */
+
+.mainContent {
+    width: 100%;
+}
+
+#userMenuPopover {
+    padding: 10px;
+}
+
+#userMenuPopover .sapMBtn {
+    width: 100%;
+    text-align: left;
+}
+.customComboBox .sapMComboBoxBase {
+    box-shadow: none !important;
+    border: none !important;
+}
+.customComboBox .sapMComboBoxBaseInner {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+.customComboBox .sapMComboBoxArrow {
+    display: none !important;
+}
+.customComboBox .sapMInputIcon {
+    display: none !important;
+}
+.customComboBox .sapMComboBoxBaseInner {
+    padding-right: 0 !important;
+}
+
+
+
+.categoryPanel {
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.categoryBox , .CimageHbox{
+    margin: 10px;
+    background-color: none;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    padding: 10px;
+    text-align: center;
+}
+.menuBar{
+    background-color: none !important;
+}
+
+.categoryText {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.smallBackgroundImage {
+    background-size: 150px; /* Scales the image to fit within the tile */
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the image */
+}
+
+.tileLayout {
+	float: left;
+    height: 230px !important;
+    width: 200px !important;
+}
+
+.backgroundImagePage , .catalogOrderPage {
+    background-image: url("https://wallpaperbat.com/img/812380-trendy-background-ideas-for-your-website.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100%;
+}
+
+
+
+
+
+
+/* webapp/css/style.css */
+
+.iphone15Layout , .backgroundImagePage , .catalogOrderPage{
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+}
+
+.iphoneTitle {
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: red;
+}
+
+.separator {
+    height: 2px;
+    background-color: #000;
+    margin: 10px 0;
+}
+
+.specText {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.footer {
+    border-top: 1px solid #8b4513;
+    padding-top: 10px;
+}
+
+.brandText {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.linkText {
+    color: #8b4513;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+/* webapp/css/style.css */
+
+.specLayout {
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+.specTable {
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.specTable .sapMTableTH {
+    background-color: #e6f3ff;
+    font-weight: bold;
+}
+
+.specTable .sapMTableRow {
+    border-bottom: 1px solid #ddd;
+}
+
+.specTable .sapMTableRow:last-child {
+    border-bottom: none;
+}
+
+.Category {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/* webapp/css/style.css */
+
+.iphone14ProLayout {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.specTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.getUptoText {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.priceText {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4040;
+    margin-top: 10px;
+}
+
+
+#RSButton{
+    padding-top: 1000px;
+}

@@ -1,0 +1,46 @@
+<mvc:View controllerName="ladera.mobiles.controller.CatalogOrderPage"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    height="100%">
+<Page class="catalogOrderPage" showHeader="false">
+    <VBox>
+        <HBox>
+            <HBox class="CimageHbox" width="50%">
+            <Image src="Images/Company Name.png" width="250px" height="50px"/>
+            </HBox>
+            <HBox>
+            <MenuButton icon="sap-icon://person-placeholder" >
+			    <Menu>
+				    <MenuItem text="Settings" icon="sap-icon://action-settings" press="onPress"/>
+				    <MenuItem text="About" icon="sap-icon://high-priority" press="onPress" />
+				    <MenuItem text="Sign Out" icon="sap-icon://log" press="onPress" />
+			    </Menu>
+		    </MenuButton>
+            </HBox>
+        </HBox>
+    </VBox>
+    <VBox>
+        <HBox height="100px">
+
+        </HBox>
+        <HBox width="100%" justifyContent="Center" alignContent="Center">
+            <VBox class="categoryBox" width="23%">
+                <Image id="catImage" src="Images/Catalog/phone.png" width="100%" height="250px" press="onPhones"/>
+                <Text text="Phone" textAlign="Center" class="categoryText"/>
+            </VBox>
+            <VBox class="categoryBox" width="23%">
+                <Image id="catImage1" src="Images/Catalog/watch.png" width="100%" height="250px" press="onWatch"/>
+                <Text text="Watch" textAlign="Center" class="categoryText"/>
+            </VBox>
+            <VBox class="categoryBox" width="23%">
+                <Image id="catImage2" src="Images/Catalog/Airpods.png" width="100%" height="250px" press="onAirpods"/>
+                <Text text="Airpods" textAlign="Center" class="categoryText"/>
+            </VBox>
+            <VBox class="categoryBox" width="23%">
+                <Image id="catImage3" src="Images/Catalog/Charger.png" width="100%" height="250px" press="onCharger"/>
+                <Text text="Charger" textAlign="Center" class="categoryText"/>
+            </VBox>
+        </HBox>
+     </VBox>
+</Page>
+</mvc:View>

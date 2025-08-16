@@ -1,0 +1,41 @@
+<mvc:View controllerName="ladera.mobiles.controller.PhonePage"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    height="100%">
+    <Page class="backgroundImagePage" showHeader="false" >
+           <VBox height="100%">
+           <HBox height="150px">
+                <Select
+                id="iphoneSelect"
+                width="250px"
+                change="onSelectionChange"
+                items="{
+                    path: 'Phones>/',
+                    templateShareable: false
+                }">
+                <core:Item key="{Phones>key}" text="{Phones>text}"/>
+            </Select>
+           </HBox>
+           <HBox id="Hboxid" justifyContent="Center" alignContent="Center">
+            <FlexBox
+                wrap="Wrap"
+                id="Flexboxvalue"
+                justifyContent="Center"
+                alignContent="Center"
+                items="{path: 'Images>/'}">
+                <items >
+                    <GenericTile
+                        header="{Images>name}"
+                        class="sapUiTinyMarginBegin  sapUiTinyMarginTop tileLayout smallBackgroundImage"
+                        press=".onCategoryPress"
+                        frameType="TwoByOne"
+                        backgroundImage="{Images>image}">
+                    </GenericTile>
+                </items>
+            </FlexBox>
+            </HBox>
+        </VBox>
+    </Page>
+</mvc:View>
