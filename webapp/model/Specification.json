@@ -1,0 +1,1490 @@
+{
+"iPhone 6": [
+    {
+    "imageUrl":"Images/PhonesFullimage/IPhone 6.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A8 (20 nm, Dual-core 1.4 GHz Typhoon)" },
+      { "category": "Rear Camera", "value": "8 MP (wide, f/2.2, 29mm, 1.5µm, PDAF)" },
+      { "category": "Front Camera", "value": "1.2 MP (wide, f/2.2, 31mm)" },
+      { "category": "Battery", "value": "1810 mAh" },
+      { "category": "Display", "value": "4.7-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "1810 mAh" },
+      { "category": "Battery type", "value": "Li-Po" },
+      { "category": "Quick charging", "value": "No" },
+      { "category": "Wireless charging", "value": "No" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD" },
+      { "category": "Resolution", "value": "1334 x 750 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "500 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 19, 2014" },
+      { "category": "Operating system", "value": "iOS 8 (upgradable to iOS 12.5.7)" },
+      { "category": "Os update", "value": "Upgradable to iOS 12.5.7" },
+      { "category": "Security updates", "value": "Ended January 2023" }
+    ],
+    "design": [
+      { "category": "Height", "value": "138.1 mm" },
+      { "category": "Width", "value": "67.0 mm" },
+      { "category": "Thickness", "value": "6.9 mm" },
+      { "category": "Weight", "value": "129 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, aluminum back" },
+      { "category": "Water resistance", "value": "No" }
+    ]
+  }
+],
+"iPhone 6 Plus":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 6 Plus.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A8 (20 nm, Dual-core 1.4 GHz Typhoon)" },
+      { "category": "Rear Camera", "value": "8 MP (wide, f/2.2, 29mm, 1.5µm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "1.2 MP (wide, f/2.2, 31mm)" },
+      { "category": "Battery", "value": "2915 mAh" },
+      { "category": "Display", "value": "5.5-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2915 mAh" },
+      { "category": "Battery type", "value": "Li-Po" },
+      { "category": "Quick charging", "value": "No" },
+      { "category": "Wireless charging", "value": "No" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD" },
+      { "category": "Resolution", "value": "1920 x 1080 (~401 ppi)" },
+      { "category": "Peak brightness", "value": "500 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 19, 2014" },
+      { "category": "Operating system", "value": "iOS 8 (upgradable to iOS 12.5.7)" },
+      { "category": "Os update", "value": "Upgradable to iOS 12.5.7" },
+      { "category": "Security updates", "value": "Ended January 2023" }
+    ],
+    "design": [
+      { "category": "Height", "value": "158.1 mm" },
+      { "category": "Width", "value": "77.8 mm" },
+      { "category": "Thickness", "value": "7.1 mm" },
+      { "category": "Weight", "value": "172 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, aluminum back" },
+      { "category": "Water resistance", "value": "No" }
+    ]
+  }
+],
+"iPhone 6s":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 6s.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A9 (14 nm, Dual-core 1.84 GHz Twister)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/2.2, 29mm, 1.22µm, PDAF)" },
+      { "category": "Front Camera", "value": "5 MP (wide, f/2.2, 31mm)" },
+      { "category": "Battery", "value": "1715 mAh" },
+      { "category": "Display", "value": "4.7-inch Retina HD IPS LCD, 60Hz, 3D Touch" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "1715 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "No" },
+      { "category": "Wireless charging", "value": "No" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD, 3D Touch" },
+      { "category": "Resolution", "value": "1334 x 750 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "500 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 25, 2015" },
+      { "category": "Operating system", "value": "iOS 9 (upgradable to iOS 15.8.4)" },
+      { "category": "Os update", "value": "Upgradable to iOS 15.8.4" },
+      { "category": "Security updates", "value": "Ended March 2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "138.3 mm" },
+      { "category": "Width", "value": "67.1 mm" },
+      { "category": "Thickness", "value": "7.1 mm" },
+      { "category": "Weight", "value": "143 g" },
+      { "category": "Build material", "value": "7000 series aluminum frame, glass front, aluminum back" },
+      { "category": "Water resistance", "value": "No (unofficial water resistance with rubber gasket)" }
+    ]
+  }
+],
+"iPhone 6s Plus":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 6s Plus.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A9 (14 nm, Dual-core 1.84 GHz Twister)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/2.2, 29mm, 1.22µm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "5 MP (wide, f/2.2, 31mm)" },
+      { "category": "Battery", "value": "2750 mAh" },
+      { "category": "Display", "value": "5.5-inch Retina HD IPS LCD, 60Hz, 3D Touch" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2750 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "No" },
+      { "category": "Wireless charging", "value": "No" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD, 3D Touch" },
+      { "category": "Resolution", "value": "1920 x 1080 (~401 ppi)" },
+      { "category": "Peak brightness", "value": "500 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 25, 2015" },
+      { "category": "Operating system", "value": "iOS 9 (upgradable to iOS 15.8.4)" },
+      { "category": "Os update", "value": "Upgradable to iOS 15.8.4" },
+      { "category": "Security updates", "value": "Ended March 2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "158.2 mm" },
+      { "category": "Width", "value": "77.9 mm" },
+      { "category": "Thickness", "value": "7.3 mm" },
+      { "category": "Weight", "value": "192 g" },
+      { "category": "Build material", "value": "7000 series aluminum frame, glass front, aluminum back" },
+      { "category": "Water resistance", "value": "No (unofficial water resistance with rubber gasket)" }
+    ]
+  }
+],
+"iPhone 7":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 7.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A10 Fusion (16 nm, Quad-core 2.34 GHz)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.8, 28mm, 1.22µm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "7 MP (wide, f/2.2, 32mm)" },
+      { "category": "Battery", "value": "1960 mAh" },
+      { "category": "Display", "value": "4.7-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "1960 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "No" },
+      { "category": "Wireless charging", "value": "No" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD" },
+      { "category": "Resolution", "value": "1334 x 750 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 16, 2016" },
+      { "category": "Operating system", "value": "iOS 10.0.1 (upgradable to iOS 15.8.4)" },
+      { "category": "Os update", "value": "Upgradable to iOS 15.8.4" },
+      { "category": "Security updates", "value": "Ended March 2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "138.3 mm" },
+      { "category": "Width", "value": "67.1 mm" },
+      { "category": "Thickness", "value": "7.1 mm" },
+      { "category": "Weight", "value": "138 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, aluminum back" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+"iPhone 7 Plus":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 7 Plus.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A10 Fusion (16 nm, Quad-core 2.34 GHz)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.8, 28mm, 1.22µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 56mm, 2x zoom)" },
+      { "category": "Front Camera", "value": "7 MP (wide, f/2.2, 32mm)" },
+      { "category": "Battery", "value": "2900 mAh" },
+      { "category": "Display", "value": "5.5-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2900 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "No" },
+      { "category": "Wireless charging", "value": "No" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD" },
+      { "category": "Resolution", "value": "1920 x 1080 (~401 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 16, 2016" },
+      { "category": "Operating system", "value": "iOS 10.0.1 (upgradable to iOS 15.8.4)" },
+      { "category": "Os update", "value": "Upgradable to iOS 15.8.4" },
+      { "category": "Security updates", "value": "Ended March 2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "158.2 mm" },
+      { "category": "Width", "value": "77.9 mm" },
+      { "category": "Thickness", "value": "7.3 mm" },
+      { "category": "Weight", "value": "188 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, aluminum back" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+"iPhone SE": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone SE.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A9 (14 nm, Dual-core)" },
+      { "category": "Rear Camera", "value": "12 MP (f/2.2, 29mm, PDAF)" },
+      { "category": "Front Camera", "value": "1.2 MP (f/2.4, 32mm)" },
+      { "category": "Battery", "value": "1624 mAh" },
+      { "category": "Display", "value": "4.0-inch Retina IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "1624 mAh" },
+      { "category": "Battery type", "value": "Li-Po" },
+      { "category": "Quick charging", "value": "Not supported" },
+      { "category": "Wireless charging", "value": "Not supported" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina IPS LCD" },
+      { "category": "Resolution", "value": "1136 x 640 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "500 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "March 31, 2016" },
+      { "category": "Operating system", "value": "iOS 9.3 (upgradable to iOS 15.8)" },
+      { "category": "Os update", "value": "Upgradable to iOS 15.8" },
+      { "category": "Security updates", "value": "Expected until 2022-2023" }
+    ],
+    "design": [
+      { "category": "Height", "value": "123.8 mm" },
+      { "category": "Width", "value": "58.6 mm" },
+      { "category": "Thickness", "value": "7.6 mm" },
+      { "category": "Weight", "value": "113 g" },
+      { "category": "Build material", "value": "Aluminum body, glass front" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+
+"iPhone SE 2020": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone SE 2020.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A13 Bionic (7 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (f/1.8, 28mm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "7 MP (f/2.2, 32mm)" },
+      { "category": "Battery", "value": "1821 mAh" },
+      { "category": "Display", "value": "4.7-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "1821 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "18W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD, True Tone" },
+      { "category": "Resolution", "value": "1334 x 750 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "April 24, 2020" },
+      { "category": "Operating system", "value": "iOS 13 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2026-2027" }
+    ],
+    "design": [
+      { "category": "Height", "value": "138.4 mm" },
+      { "category": "Width", "value": "67.3 mm" },
+      { "category": "Thickness", "value": "7.3 mm" },
+      { "category": "Weight", "value": "148 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front/back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+
+"iPhone SE 2022": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone SE 2022.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A15 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (f/1.6, 26mm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "7 MP (f/2.2, 32mm)" },
+      { "category": "Battery", "value": "2018 mAh" },
+      { "category": "Display", "value": "4.7-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2018 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD, True Tone" },
+      { "category": "Resolution", "value": "1334 x 750 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "March 18, 2022" },
+      { "category": "Operating system", "value": "iOS 15.4 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2028-2029" }
+    ],
+    "design": [
+      { "category": "Height", "value": "138.4 mm" },
+      { "category": "Width", "value": "67.3 mm" },
+      { "category": "Thickness", "value": "7.3 mm" },
+      { "category": "Weight", "value": "144 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front/back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+"iPhone 8":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 8.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A11 Bionic (10 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.8, 28mm, 1.22µm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "7 MP (wide, f/2.2, 32mm)" },
+      { "category": "Battery", "value": "1821 mAh" },
+      { "category": "Display", "value": "4.7-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "1821 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 15W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD" },
+      { "category": "Resolution", "value": "1334 x 750 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 22, 2017" },
+      { "category": "Operating system", "value": "iOS 11 (upgradable to iOS 16.7.11)" },
+      { "category": "Os update", "value": "Upgradable to iOS 16.7.11" },
+      { "category": "Security updates", "value": "Ended March 2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "138.4 mm" },
+      { "category": "Width", "value": "67.3 mm" },
+      { "category": "Thickness", "value": "7.3 mm" },
+      { "category": "Weight", "value": "148 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+"iPhone 8 Plus":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 8 Plus.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A11 Bionic (10 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.8, 28mm, 1.22µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 56mm, 2x zoom)" },
+      { "category": "Front Camera", "value": "7 MP (wide, f/2.2, 32mm)" },
+      { "category": "Battery", "value": "2691 mAh" },
+      { "category": "Display", "value": "5.5-inch Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2691 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 15W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Retina HD IPS LCD" },
+      { "category": "Resolution", "value": "1920 x 1080 (~401 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 22, 2017" },
+      { "category": "Operating system", "value": "iOS 11 (upgradable to iOS 16.7.11)" },
+      { "category": "Os update", "value": "Upgradable to iOS 16.7.11" },
+      { "category": "Security updates", "value": "Ended March 2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "158.4 mm" },
+      { "category": "Width", "value": "78.1 mm" },
+      { "category": "Thickness", "value": "7.5 mm" },
+      { "category": "Weight", "value": "202 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+"iPhone 11":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 11.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A13 Bionic (7 nm+, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.8, 26mm, 1.4µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "3110 mAh" },
+      { "category": "Display", "value": "6.1-inch Liquid Retina HD IPS LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3110 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 18W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Liquid Retina HD IPS LCD" },
+      { "category": "Resolution", "value": "1792 x 828 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 20, 2019" },
+      { "category": "Operating system", "value": "iOS 13 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2026-2027" }
+    ],
+    "design": [
+      { "category": "Height", "value": "150.9 mm" },
+      { "category": "Width", "value": "75.7 mm" },
+      { "category": "Thickness", "value": "8.3 mm" },
+      { "category": "Weight", "value": "194 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back" },
+      { "category": "Water resistance", "value": "IP68 (up to 2m for 30 min)" }
+    ]
+  }
+],
+"iPhone 11 Pro":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 11 Pro.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A13 Bionic (7 nm+, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.8, 26mm, 1.4µm, PDAF, OIS) + 12 MP (telephoto, f/2.0, 52mm, 2x zoom) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "3046 mAh" },
+      { "category": "Display", "value": "5.8-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3046 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 18W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2436 x 1125 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "800 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 20, 2019" },
+      { "category": "Operating system", "value": "iOS 13 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2026-2027" }
+    ],
+    "design": [
+      { "category": "Height", "value": "144.0 mm" },
+      { "category": "Width", "value": "71.4 mm" },
+      { "category": "Thickness", "value": "8.1 mm" },
+      { "category": "Weight", "value": "188 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back" },
+      { "category": "Water resistance", "value": "IP68 (up to 4m for 30 min)" }
+    ]
+  }
+],
+"iPhone 11 Pro Max":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 11 Pro Max.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A13 Bionic (7 nm+, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.8, 26mm, 1.4µm, PDAF, OIS) + 12 MP (telephoto, f/2.0, 52mm, 2x zoom) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "3969 mAh" },
+      { "category": "Display", "value": "6.5-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3969 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 18W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2688 x 1242 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "800 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 20, 2019" },
+      { "category": "Operating system", "value": "iOS 13 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2026-2027" }
+    ],
+    "design": [
+      { "category": "Height", "value": "158.0 mm" },
+      { "category": "Width", "value": "77.8 mm" },
+      { "category": "Thickness", "value": "8.1 mm" },
+      { "category": "Weight", "value": "226 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back" },
+      { "category": "Water resistance", "value": "IP68 (up to 4m for 30 min)" }
+    ]
+  }
+],
+"iPhone 12":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 12.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A14 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.6, 26mm, 1.4µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "2815 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2815 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2532 x 1170 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "October 23, 2020" },
+      { "category": "Operating system", "value": "iOS 14.1 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2027-2028" }
+    ],
+    "design": [
+      { "category": "Height", "value": "146.7 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "7.4 mm" },
+      { "category": "Weight", "value": "164 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 12 Mini":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 12 Mini.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A14 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.6, 26mm, 1.4µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "2227 mAh" },
+      { "category": "Display", "value": "5.4-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2227 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2340 x 1080 (~476 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "November 13, 2020" },
+      { "category": "Operating system", "value": "iOS 14.2 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2027-2028" }
+    ],
+    "design": [
+      { "category": "Height", "value": "131.5 mm" },
+      { "category": "Width", "value": "64.2 mm" },
+      { "category": "Thickness", "value": "7.4 mm" },
+      { "category": "Weight", "value": "135 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 12 Pro":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 12 Pro.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A14 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.6, 26mm, 1.4µm, PDAF, OIS) + 12 MP (telephoto, f/2.0, 52mm, 2x zoom) + 12 MP (ultrawide, f/2.4, 13mm) + LiDAR" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "2815 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2815 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2532 x 1170 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "October 23, 2020" },
+      { "category": "Operating system", "value": "iOS 14.1 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2027-2028" }
+    ],
+    "design": [
+      { "category": "Height", "value": "146.7 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "7.4 mm" },
+      { "category": "Weight", "value": "189 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 12 Pro Max":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 12 Pro Max.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A14 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.6, 26mm, 1.7µm, PDAF, OIS) + 12 MP (telephoto, f/2.2, 65mm, 2.5x zoom) + 12 MP (ultrawide, f/2.4, 13mm) + LiDAR" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "3687 mAh" },
+      { "category": "Display", "value": "6.7-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3687 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2778 x 1284 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "November 13, 2020" },
+      { "category": "Operating system", "value": "iOS 14.2 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2027-2028" }
+    ],
+    "design": [
+      { "category": "Height", "value": "160.8 mm" },
+      { "category": "Width", "value": "78.1 mm" },
+      { "category": "Thickness", "value": "7.4 mm" },
+      { "category": "Weight", "value": "228 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 13":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 13.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A15 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.6, 26mm, 1.7µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "3240 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3240 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2532 x 1170 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 24, 2021" },
+      { "category": "Operating system", "value": "iOS 15 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2028-2029" }
+    ],
+    "design": [
+      { "category": "Height", "value": "146.7 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "7.65 mm" },
+      { "category": "Weight", "value": "174 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 13 Mini":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 13 Mini.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A15 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.6, 26mm, 1.7µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "2438 mAh" },
+      { "category": "Display", "value": "5.4-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2438 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2340 x 1080 (~476 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 24, 2021" },
+      { "category": "Operating system", "value": "iOS 15 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2028-2029" }
+    ],
+    "design": [
+      { "category": "Height", "value": "131.5 mm" },
+      { "category": "Width", "value": "64.2 mm" },
+      { "category": "Thickness", "value": "7.65 mm" },
+      { "category": "Weight", "value": "141 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+], 
+"iPhone 13 Pro":[ 
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 13 Pro.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A15 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.5, 26mm, 1.9µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 77mm, 3x zoom) + 12 MP (ultrawide, f/1.8, 13mm) + LiDAR" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "3095 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3095 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion" },
+      { "category": "Resolution", "value": "2532 x 1170 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 24, 2021" },
+      { "category": "Operating system", "value": "iOS 15 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2028-2029" }
+    ],
+    "design": [
+      { "category": "Height", "value": "146.7 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "7.65 mm" },
+      { "category": "Weight", "value": "204 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 13 Pro Max":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 13 Pro Max.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A15 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.5, 26mm, 1.9µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 77mm, 3x zoom) + 12 MP (ultrawide, f/1.8, 13mm) + LiDAR" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/2.2, 23mm)" },
+      { "category": "Battery", "value": "4352 mAh" },
+      { "category": "Display", "value": "6.7-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4352 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 27W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion" },
+      { "category": "Resolution", "value": "2778 x 1284 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 24, 2021" },
+      { "category": "Operating system", "value": "iOS 15 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2028-2029" }
+    ],
+    "design": [
+      { "category": "Height", "value": "160.8 mm" },
+      { "category": "Width", "value": "78.1 mm" },
+      { "category": "Thickness", "value": "7.65 mm" },
+      { "category": "Weight", "value": "240 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 14":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 14.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A15 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.5, 26mm, 1.9µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "3279 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3279 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2532 x 1170 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 16, 2022" },
+      { "category": "Operating system", "value": "iOS 16 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2029-2030" }
+    ],
+    "design": [
+      { "category": "Height", "value": "146.7 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "7.8 mm" },
+      { "category": "Weight", "value": "172 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 14 Plus":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 14 Plus.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A15 Bionic (5 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (wide, f/1.5, 26mm, 1.9µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "4323 mAh" },
+      { "category": "Display", "value": "6.7-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4323 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2778 x 1284 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "October 7, 2022" },
+      { "category": "Operating system", "value": "iOS 16 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2029-2030" }
+    ],
+    "design": [
+      { "category": "Height", "value": "160.8 mm" },
+      { "category": "Width", "value": "78.1 mm" },
+      { "category": "Thickness", "value": "7.8 mm" },
+      { "category": "Weight", "value": "203 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 14 Pro":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 14 Pro.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A16 Bionic (4 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (wide, f/1.78, 24mm, 1.22µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 77mm, 3x zoom) + 12 MP (ultrawide, f/2.2, 13mm) + LiDAR" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "3200 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3200 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion, Always-On" },
+      { "category": "Resolution", "value": "2556 x 1179 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 16, 2022" },
+      { "category": "Operating system", "value": "iOS 16 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2029-2030" }
+    ],
+    "design": [
+      { "category": "Height", "value": "147.5 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "7.85 mm" },
+      { "category": "Weight", "value": "206 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 14 Pro Max":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 14 Pro Max.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A16 Bionic (4 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (wide, f/1.78, 24mm, 1.22µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 77mm, 3x zoom) + 12 MP (ultrawide, f/2.2, 13mm) + LiDAR" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "4323 mAh" },
+      { "category": "Display", "value": "6.7-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4323 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion, Always-On" },
+      { "category": "Resolution", "value": "2796 x 1290 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 16, 2022" },
+      { "category": "Operating system", "value": "iOS 16 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2029-2030" }
+    ],
+    "design": [
+      { "category": "Height", "value": "160.7 mm" },
+      { "category": "Width", "value": "77.6 mm" },
+      { "category": "Thickness", "value": "7.85 mm" },
+      { "category": "Weight", "value": "240 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 15":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 15.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A16 Bionic (4 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (wide, f/1.6, 26mm, 1.0µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "3349 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3349 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2556 x 1179 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 22, 2023" },
+      { "category": "Operating system", "value": "iOS 17 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2030-2031" }
+    ],
+    "design": [
+      { "category": "Height", "value": "147.6 mm" },
+      { "category": "Width", "value": "71.6 mm" },
+      { "category": "Thickness", "value": "7.8 mm" },
+      { "category": "Weight", "value": "171 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, color-infused glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 15 Plus":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 15 Plus.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A16 Bionic (4 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (wide, f/1.6, 26mm, 1.0µm, PDAF, OIS) + 12 MP (ultrawide, f/2.4, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "4383 mAh" },
+      { "category": "Display", "value": "6.7-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4383 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2796 x 1290 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 22, 2023" },
+      { "category": "Operating system", "value": "iOS 17 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2030-2031" }
+    ],
+    "design": [
+      { "category": "Height", "value": "160.9 mm" },
+      { "category": "Width", "value": "77.8 mm" },
+      { "category": "Thickness", "value": "7.8 mm" },
+      { "category": "Weight", "value": "201 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, color-infused glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 15 Pro":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 15 Pro.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A17 Pro (3 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (wide, f/1.78, 24mm, 1.22µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 77mm, 3x zoom) + 12 MP (ultrawide, f/2.2, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "3274 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3274 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion, Always-On" },
+      { "category": "Resolution", "value": "2556 x 1179 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 22, 2023" },
+      { "category": "Operating system", "value": "iOS 17 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2030-2031" }
+    ],
+    "design": [
+      { "category": "Height", "value": "146.6 mm" },
+      { "category": "Width", "value": "70.6 mm" },
+      { "category": "Thickness", "value": "8.25 mm" },
+      { "category": "Weight", "value": "187 g" },
+      { "category": "Build material", "value": "Titanium frame, glass front, textured matte glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 15 Pro Max":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 15 Pro Max.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A17 Pro (3 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (wide, f/1.78, 24mm, 1.22µm, PDAF, OIS) + 12 MP (telephoto, f/2.8, 120mm, 5x zoom) + 12 MP (ultrawide, f/2.2, 13mm)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "4441 mAh" },
+      { "category": "Display", "value": "6.7-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4441 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion, Always-On" },
+      { "category": "Resolution", "value": "2796 x 1290 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 22, 2023" },
+      { "category": "Operating system", "value": "iOS 17 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2030-2031" }
+    ],
+    "design": [
+      { "category": "Height", "value": "159.9 mm" },
+      { "category": "Width", "value": "76.7 mm" },
+      { "category": "Thickness", "value": "8.25 mm" },
+      { "category": "Weight", "value": "221 g" },
+      { "category": "Build material", "value": "Titanium frame, glass front, textured matte glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 16":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 16.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A18 (3 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (Fusion, f/1.6, 26mm, 1.0µm, PDAF, OIS) + 12 MP (ultrawide, f/2.2, 13mm, macro)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "3561 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3561 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 25W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2556 x 1179 (~460 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 20, 2024" },
+      { "category": "Operating system", "value": "iOS 18 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2031-2032" }
+    ],
+    "design": [
+      { "category": "Height", "value": "147.6 mm" },
+      { "category": "Width", "value": "71.6 mm" },
+      { "category": "Thickness", "value": "7.8 mm" },
+      { "category": "Weight", "value": "170 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, color-infused glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 16 Plus":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 16 Plus.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A18 (3 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (Fusion, f/1.6, 26mm, 1.0µm, PDAF, OIS) + 12 MP (ultrawide, f/2.2, 13mm, macro)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "4674 mAh" },
+      { "category": "Display", "value": "6.7-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4674 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 25W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED" },
+      { "category": "Resolution", "value": "2796 x 1290 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 20, 2024" },
+      { "category": "Operating system", "value": "iOS 18 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2031-2032" }
+    ],
+    "design": [
+      { "category": "Height", "value": "160.9 mm" },
+      { "category": "Width", "value": "77.8 mm" },
+      { "category": "Thickness", "value": "7.8 mm" },
+      { "category": "Weight", "value": "199 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, color-infused glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 16 Pro":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 16 Pro.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A18 Pro (3 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (Fusion, f/1.78, 24mm, 1.22µm, PDAF, OIS) + 48 MP (ultrawide, f/2.2, 13mm) + 12 MP (telephoto, f/2.8, 120mm, 5x zoom)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "3582 mAh" },
+      { "category": "Display", "value": "6.3-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3582 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 25W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion, Always-On" },
+      { "category": "Resolution", "value": "2622 x 1206 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 20, 2024" },
+      { "category": "Operating system", "value": "iOS 18 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2031-2032" }
+    ],
+    "design": [
+      { "category": "Height", "value": "149.6 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "8.25 mm" },
+      { "category": "Weight", "value": "199 g" },
+      { "category": "Build material", "value": "Titanium frame, glass front, textured matte glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 16 Pro Max":[
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 16 Pro Max.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A18 Pro (3 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (Fusion, f/1.78, 24mm, 1.22µm, PDAF, OIS) + 48 MP (ultrawide, f/2.2, 13mm) + 12 MP (telephoto, f/2.8, 120mm, 5x zoom)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "4685 mAh" },
+      { "category": "Display", "value": "6.9-inch Super Retina XDR OLED, 120Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4685 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 25W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "15W (MagSafe), 7.5W (Qi2)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, ProMotion, Always-On" },
+      { "category": "Resolution", "value": "2868 x 1320 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "2000 nits" },
+      { "category": "Refresh rate", "value": "120 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 20, 2024" },
+      { "category": "Operating system", "value": "iOS 18 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2031-2032" }
+    ],
+    "design": [
+      { "category": "Height", "value": "163.0 mm" },
+      { "category": "Width", "value": "77.6 mm" },
+      { "category": "Thickness", "value": "8.25 mm" },
+      { "category": "Weight", "value": "227 g" },
+      { "category": "Build material", "value": "Titanium frame, glass front, textured matte glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone 16e": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone 16e.jpg",
+    "keyspec": [
+
+      { "category": "Processor", "value": "Apple A18 (3 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "48 MP (Fusion, f/1.6, 26mm, 0.7µm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "12 MP (wide, f/1.9, 23mm, PDAF)" },
+      { "category": "Battery", "value": "4005 mAh" },
+      { "category": "Display", "value": "6.1-inch Super Retina XDR OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "4005 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "Fast charging 20W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina XDR OLED, HDR10" },
+      { "category": "Resolution", "value": "2532 x 1170 (~457 ppi)" },
+      { "category": "Peak brightness", "value": "1200 nits (HDR), 800 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "February 28, 2025" },
+      { "category": "Operating system", "value": "iOS 18.3.1 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2030-2031" }
+    ],
+    "design": [
+      { "category": "Height", "value": "146.7 mm" },
+      { "category": "Width", "value": "71.5 mm" },
+      { "category": "Thickness", "value": "7.8 mm" },
+      { "category": "Weight", "value": "167 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front, glass back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 6m for 30 min)" }
+    ]
+  }
+],
+"iPhone X": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone X.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A11 Bionic (10 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (f/1.8, 28mm, PDAF, OIS) + 12 MP (f/2.4, 52mm, PDAF, 2x zoom)" },
+      { "category": "Front Camera", "value": "7 MP (f/2.2, 32mm)" },
+      { "category": "Battery", "value": "2716 mAh" },
+      { "category": "Display", "value": "5.8-inch Super Retina OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2716 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "15W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina OLED, HDR10, Dolby Vision" },
+      { "category": "Resolution", "value": "2436 x 1125 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "November 3, 2017" },
+      { "category": "Operating system", "value": "iOS 11 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2023-2024" }
+    ],
+    "design": [
+      { "category": "Height", "value": "143.6 mm" },
+      { "category": "Width", "value": "70.9 mm" },
+      { "category": "Thickness", "value": "7.7 mm" },
+      { "category": "Weight", "value": "174 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front/back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+
+"iPhone XR": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone XR.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A12 Bionic (7 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (f/1.8, 26mm, PDAF, OIS)" },
+      { "category": "Front Camera", "value": "7 MP (f/2.2, 32mm)" },
+      { "category": "Battery", "value": "2942 mAh" },
+      { "category": "Display", "value": "6.1-inch Liquid Retina LCD, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2942 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "15W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Liquid Retina IPS LCD, True Tone" },
+      { "category": "Resolution", "value": "1792 x 828 (~326 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "October 26, 2018" },
+      { "category": "Operating system", "value": "iOS 12 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2024-2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "150.9 mm" },
+      { "category": "Width", "value": "75.7 mm" },
+      { "category": "Thickness", "value": "8.3 mm" },
+      { "category": "Weight", "value": "194 g" },
+      { "category": "Build material", "value": "Aluminum frame, glass front/back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP67 (up to 1m for 30 min)" }
+    ]
+  }
+],
+
+"iPhone XS": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone XS.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A12 Bionic (7 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (f/1.8, 26mm, PDAF, OIS) + 12 MP (f/2.4, 52mm, PDAF, 2x zoom)" },
+      { "category": "Front Camera", "value": "7 MP (f/2.2, 32mm)" },
+      { "category": "Battery", "value": "2658 mAh" },
+      { "category": "Display", "value": "5.8-inch Super Retina OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "2658 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "15W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina OLED, HDR10, Dolby Vision" },
+      { "category": "Resolution", "value": "2436 x 1125 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 21, 2018" },
+      { "category": "Operating system", "value": "iOS 12 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2024-2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "143.6 mm" },
+      { "category": "Width", "value": "70.9 mm" },
+      { "category": "Thickness", "value": "7.7 mm" },
+      { "category": "Weight", "value": "177 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front/back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 2m for 30 min)" }
+    ]
+  }
+],
+
+"iPhone XS Max": [
+  {
+    "imageUrl":"Images/PhonesFullimage/IPhone XS Max.jpg",
+    "keyspec": [
+      { "category": "Processor", "value": "Apple A12 Bionic (7 nm, Hexa-core)" },
+      { "category": "Rear Camera", "value": "12 MP (f/1.8, 26mm, PDAF, OIS) + 12 MP (f/2.4, 52mm, PDAF, 2x zoom)" },
+      { "category": "Front Camera", "value": "7 MP (f/2.2, 32mm)" },
+      { "category": "Battery", "value": "3174 mAh" },
+      { "category": "Display", "value": "6.5-inch Super Retina OLED, 60Hz" }
+    ],
+    "battery": [
+      { "category": "Capacity", "value": "3174 mAh" },
+      { "category": "Battery type", "value": "Li-Ion" },
+      { "category": "Quick charging", "value": "15W (50% in 30 min)" },
+      { "category": "Wireless charging", "value": "7.5W (Qi)" }
+    ],
+    "display": [
+      { "category": "Display type", "value": "Super Retina OLED, HDR10, Dolby Vision" },
+      { "category": "Resolution", "value": "2688 x 1242 (~458 ppi)" },
+      { "category": "Peak brightness", "value": "625 nits (typical)" },
+      { "category": "Refresh rate", "value": "60 Hz" }
+    ],
+    "general": [
+      { "category": "Launch date", "value": "September 21, 2018" },
+      { "category": "Operating system", "value": "iOS 12 (upgradable to iOS 18.6)" },
+      { "category": "Os update", "value": "Upgradable to iOS 18.6" },
+      { "category": "Security updates", "value": "Expected until 2024-2025" }
+    ],
+    "design": [
+      { "category": "Height", "value": "157.5 mm" },
+      { "category": "Width", "value": "77.4 mm" },
+      { "category": "Thickness", "value": "7.7 mm" },
+      { "category": "Weight", "value": "208 g" },
+      { "category": "Build material", "value": "Stainless steel frame, glass front/back, Ceramic Shield" },
+      { "category": "Water resistance", "value": "IP68 (up to 2m for 30 min)" }
+    ]
+  }
+]
+}

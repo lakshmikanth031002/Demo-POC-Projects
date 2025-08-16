@@ -6,7 +6,7 @@
     <VBox>
         <HBox>
             <HBox class="CimageHbox" width="50%">
-            <Image src="Images/Company Name.png" width="250px" height="50px"/>
+            <Image src="Images/Company Name.png" width="150px" height="40px"/>
             </HBox>
             <HBox>
             <MenuButton icon="sap-icon://person-placeholder" >
@@ -20,7 +20,7 @@
         </HBox>
     </VBox>
     <VBox>
-        <HBox height="100px">
+        <HBox height="70px">
 
         </HBox>
         <HBox width="100%" justifyContent="Center" alignContent="Center">

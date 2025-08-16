@@ -1,0 +1,226 @@
+ [
+    {
+      "key": "",
+      "text": "",
+      "images": [
+      ]
+    },
+    {
+      "key": "iPhone6",
+      "text": "iPhone 6 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 6.avif",
+          "name": "iPhone 6"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 6 Plus.avif",
+          "name": "iPhone 6 Plus"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 6s.avif",
+          "name": "iPhone 6s"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 6S Plus.avif",
+          "name": "iPhone 6s Plus"
+        }
+      ]
+    },
+    {
+      "key": "iPhone7",
+      "text": "iPhone 7 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 7.avif",
+          "name": "iPhone 7"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 7s.avif",
+          "name": "iPhone 7 Plus"
+        }
+      ]
+    },
+    {
+      "key": "iPhone SE",
+      "text": "iPhone SE Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone SE.avif",
+          "name": "iPhone SE"
+        },
+        {
+          "image": "Images/AllPhones/IPhone SE 1st Generation.avif",
+          "name": "iPhone SE 2020"
+        },
+        {
+          "image": "Images/AllPhones/IPhone SE 2022.avif",
+          "name": "iPhone SE 2022"
+        }
+      ]
+    },
+    {
+      "key": "iPhone8",
+      "text": "iPhone 8 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 8.avif",
+          "name": "iPhone 8"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 8s.avif",
+          "name": "iPhone 8 Plus"
+        }
+      ]
+    },
+    {
+      "key": "iPhone11",
+      "text": "iPhone 11 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 11.avif",
+          "name": "iPhone 11"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 11 Pro.avif",
+          "name": "iPhone 11 Pro"
+        }
+      ]
+    },
+    {
+      "key": "iPhone12",
+      "text": "iPhone 12 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 12.avif",
+          "name": "iPhone 12"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 12 Mini.avif",
+          "name": "iPhone 12 Mini"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 12 Pro.avif",
+          "name": "iPhone 12 Pro"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 12 Pro Max.avif",
+          "name": "iPhone 12 Pro Max"
+        }
+      ]
+    },
+    {
+      "key": "iPhone13",
+      "text": "iPhone 13 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 13.avif",
+          "name": "iPhone 13"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 13 Mini.avif",
+          "name": "iPhone 13 Mini"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 13 Pro.avif",
+          "name": "iPhone 13 Pro"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 13 Pro Max.avif",
+          "name": "iPhone 13 Pro Max"
+        }
+      ]
+    },
+    {
+      "key": "iPhone14",
+      "text": "iPhone 14 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 14.avif",
+          "name": "iPhone 14"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 14 Plus.avif",
+          "name": "iPhone 14 Plus"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 14 Pro.avif",
+          "name": "iPhone 14 Pro"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 14 Pro Max.avif",
+          "name": "iPhone 14 Pro Max"
+        }
+      ]
+    },
+    {
+      "key": "iPhone15",
+      "text": "iPhone 15 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 15.avif",
+          "name": "iPhone 15"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 15 Plus.avif",
+          "name": "iPhone 15 Plus"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 15 Pro.avif",
+          "name": "iPhone 15 Pro"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 15 Pro Max.avif",
+          "name": "iPhone 15 Pro Max"
+        }
+      ]
+    },
+    {
+      "key": "iPhone16",
+      "text": "iPhone 16 Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone 16.avif",
+          "name": "iPhone 16"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 16 Plus.avif",
+          "name": "iPhone 16 Plus"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 16 Pro.avif",
+          "name": "iPhone 16 Pro"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 16 Pro Max.avif",
+          "name": "iPhone 16 Pro Max"
+        },
+        {
+          "image": "Images/AllPhones/IPhone 16e.avif",
+          "name": "iPhone 16e"
+        }
+      ]
+    },
+    {
+      "key": "iPhone X",
+      "text": "iPhone X Series",
+      "images": [
+        {
+          "image": "Images/AllPhones/IPhone X.avif",
+          "name": "iPhone X"
+        },
+        {
+          "image": "Images/AllPhones/IPhone XR.avif",
+          "name": "iPhone XR"
+        },
+        {
+          "image": "Images/AllPhones/IPhone XS.avif",
+          "name": "iPhone XS"
+        },
+        {
+          "image": "Images/AllPhones/IPhone XS Max.avif",
+          "name": "iPhone XS Max"
+        }
+      ]
+    }
+  ]

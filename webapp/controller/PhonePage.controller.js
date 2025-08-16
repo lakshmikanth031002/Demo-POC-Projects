@@ -13,7 +13,6 @@ sap.ui.define([
             var sSelectedKey = oEvent.getParameter("selectedItem").getKey();
             var oModel = this.getView().getModel("Phones");
             var oData = oModel.getData();
-
             var SelectedImages =new sap.ui.model.json.JSONModel(oData.find(item => item.key === sSelectedKey).images);
             // oData.selectedImage = SelectedImages;
             this.getView().byId("Flexboxvalue").setModel(SelectedImages, "Images");

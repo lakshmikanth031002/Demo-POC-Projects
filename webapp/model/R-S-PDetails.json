@@ -1,0 +1,199 @@
+{
+  "iPhone 6": [
+    {"RAM": "1 GB", "Storage": "16 GB", "PriceINR": "~₹53,500"},
+    {"RAM": "1 GB", "Storage": "32 GB", "PriceINR": "~₹56,500"},
+    {"RAM": "1 GB", "Storage": "64 GB", "PriceINR": "~₹59,500"},
+    {"RAM": "1 GB", "Storage": "128 GB", "PriceINR": "~₹62,500"}
+  ],
+  "iPhone 6 Plus": [
+    {"RAM": "1 GB", "Storage": "16 GB", "PriceINR": "~₹62,500"},
+    {"RAM": "1 GB", "Storage": "64 GB", "PriceINR": "~₹71,500"},
+    {"RAM": "1 GB", "Storage": "128 GB", "PriceINR": "~₹80,500"}
+  ],
+  "iPhone 6s": [
+    {"RAM": "2 GB", "Storage": "16 GB", "PriceINR": "~₹62,000"},
+    {"RAM": "2 GB", "Storage": "32 GB", "PriceINR": "~₹65,000"},
+    {"RAM": "2 GB", "Storage": "64 GB", "PriceINR": "~₹68,000"},
+    {"RAM": "2 GB", "Storage": "128 GB", "PriceINR": "~₹71,000"}
+  ],
+  "iPhone 6s Plus": [
+    {"RAM": "2 GB", "Storage": "16 GB", "PriceINR": "~₹72,000"},
+    {"RAM": "2 GB", "Storage": "32 GB", "PriceINR": "~₹75,000"},
+    {"RAM": "2 GB", "Storage": "64 GB", "PriceINR": "~₹78,000"},
+    {"RAM": "2 GB", "Storage": "128 GB", "PriceINR": "~₹81,000"}
+  ],
+  "iPhone 7": [
+    {"RAM": "2 GB", "Storage": "32 GB", "PriceINR": "~₹60,000"},
+    {"RAM": "2 GB", "Storage": "128 GB", "PriceINR": "~₹69,000"},
+    {"RAM": "2 GB", "Storage": "256 GB", "PriceINR": "~₹78,000"}
+  ],
+  "iPhone 7 Plus": [
+    {"RAM": "3 GB", "Storage": "32 GB", "PriceINR": "~₹72,000"},
+    {"RAM": "3 GB", "Storage": "128 GB", "PriceINR": "~₹82,000"},
+    {"RAM": "3 GB", "Storage": "256 GB", "PriceINR": "~₹92,000"}
+  ],
+  "iPhone SE": [
+    {"RAM": "2 GB", "Storage": "16 GB", "PriceINR": "~₹39,000"},
+    {"RAM": "2 GB", "Storage": "32 GB", "PriceINR": "~₹42,000"},
+    {"RAM": "2 GB", "Storage": "64 GB", "PriceINR": "~₹45,000"},
+    {"RAM": "2 GB", "Storage": "128 GB", "PriceINR": "~₹48,000"}
+  ],
+  "iPhone SE 2020": [
+    {"RAM": "3 GB", "Storage": "64 GB", "PriceINR": "~₹42,500"},
+    {"RAM": "3 GB", "Storage": "128 GB", "PriceINR": "~₹47,500"},
+    {"RAM": "3 GB", "Storage": "256 GB", "PriceINR": "~₹58,500"}
+  ],
+  "iPhone SE 2022": [
+    {"RAM": "4 GB", "Storage": "64 GB", "PriceINR": "₹43,900"},
+    {"RAM": "4 GB", "Storage": "128 GB", "PriceINR": "₹48,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "₹58,900"}
+  ],
+  "iPhone 8": [
+    {"RAM": "2 GB", "Storage": "64 GB", "PriceINR": "~₹64,000"},
+    {"RAM": "2 GB", "Storage": "256 GB", "PriceINR": "~₹77,000"}
+  ],
+  "iPhone 8 Plus": [
+    {"RAM": "3 GB", "Storage": "64 GB", "PriceINR": "~₹77,000"},
+    {"RAM": "3 GB", "Storage": "256 GB", "PriceINR": "~₹90,000"}
+  ],
+  "iPhone X": [
+    {"RAM": "3 GB", "Storage": "64 GB", "PriceINR": "~₹89,000"},
+    {"RAM": "3 GB", "Storage": "256 GB", "PriceINR": "~₹1,02,000"}
+  ],
+  "iPhone XR": [
+    {"RAM": "3 GB", "Storage": "64 GB", "PriceINR": "~₹76,900"},
+    {"RAM": "3 GB", "Storage": "128 GB", "PriceINR": "~₹81,900"},
+    {"RAM": "3 GB", "Storage": "256 GB", "PriceINR": "~₹86,900"}
+  ],
+  "iPhone XS": [
+    {"RAM": "4 GB", "Storage": "64 GB", "PriceINR": "~₹99,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "~₹1,14,900"},
+    {"RAM": "4 GB", "Storage": "512 GB", "PriceINR": "~₹1,34,900"}
+  ],
+  "iPhone XS Max": [
+    {"RAM": "4 GB", "Storage": "64 GB", "PriceINR": "~₹1,09,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "~₹1,24,900"},
+    {"RAM": "4 GB", "Storage": "512 GB", "PriceINR": "~₹1,44,900"}
+  ],
+  "iPhone 11": [
+    {"RAM": "4 GB", "Storage": "64 GB", "PriceINR": "~₹64,900"},
+    {"RAM": "4 GB", "Storage": "128 GB", "PriceINR": "~₹69,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "~₹74,900"}
+  ],
+  "iPhone 11 Pro": [
+    {"RAM": "4 GB", "Storage": "64 GB", "PriceINR": "~₹99,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "~₹1,13,900"},
+    {"RAM": "4 GB", "Storage": "512 GB", "PriceINR": "~₹1,33,900"}
+  ],
+  "iPhone 12": [
+    {"RAM": "4 GB", "Storage": "64 GB", "PriceINR": "~₹79,900"},
+    {"RAM": "4 GB", "Storage": "128 GB", "PriceINR": "~₹84,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "~₹94,900"}
+  ],
+  "iPhone 12 Pro": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "~₹1,19,900"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "~₹1,29,900"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "~₹1,49,900"}
+  ],
+  "iPhone 12 Mini": [
+    {"RAM": "4 GB", "Storage": "64 GB", "PriceINR": "~₹69,900"},
+    {"RAM": "4 GB", "Storage": "128 GB", "PriceINR": "~₹74,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "~₹84,900"}
+  ],
+  "iPhone 12 Pro Max": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "~₹1,29,900"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "~₹1,39,900"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "~₹1,59,900"}
+  ],
+  "iPhone 13": [
+    {"RAM": "4 GB", "Storage": "128 GB", "PriceINR": "₹43,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "₹60,990"},
+    {"RAM": "4 GB", "Storage": "512 GB", "PriceINR": "₹84,900"}
+  ],
+  "iPhone 13 Pro": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹119,900"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹129,900"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹149,900"},
+    {"RAM": "6 GB", "Storage": "1 TB", "PriceINR": "₹179,900"}
+  ],
+  "iPhone 13 Mini": [
+    {"RAM": "4 GB", "Storage": "128 GB", "PriceINR": "~₹69,900"},
+    {"RAM": "4 GB", "Storage": "256 GB", "PriceINR": "~₹74,900"},
+    {"RAM": "4 GB", "Storage": "512 GB", "PriceINR": "~₹84,900"}
+  ],
+  "iPhone 13 Pro Max": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹129,900"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹139,900"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹159,900"},
+    {"RAM": "6 GB", "Storage": "1 TB", "PriceINR": "₹179,900"}
+  ],
+  "iPhone 14": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹52,990"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹68,999"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹81,999"}
+  ],
+  "iPhone 14 Pro": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹124,200"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹129,900"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹149,900"},
+    {"RAM": "6 GB", "Storage": "1 TB", "PriceINR": "₹175,000"}
+  ],
+  "iPhone 14 Plus": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹66,999"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹68,999"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹110,999"}
+  ],
+  "iPhone 14 Pro Max": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹127,999"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹139,900"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹159,900"},
+    {"RAM": "6 GB", "Storage": "1 TB", "PriceINR": "₹175,000"}
+  ],
+  "iPhone 15": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹61,400"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹70,800"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹99,290"}
+  ],
+  "iPhone 15 Pro": [
+    {"RAM": "8 GB", "Storage": "128 GB", "PriceINR": "₹127,990"},
+    {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹137,990"},
+    {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹157,900"},
+    {"RAM": "8 GB", "Storage": "1 TB", "PriceINR": "₹177,900"}
+  ],
+  "iPhone 15 Plus": [
+    {"RAM": "6 GB", "Storage": "128 GB", "PriceINR": "₹72,490"},
+    {"RAM": "6 GB", "Storage": "256 GB", "PriceINR": "₹89,900"},
+    {"RAM": "6 GB", "Storage": "512 GB", "PriceINR": "₹111,999"}
+  ],
+  "iPhone 15 Pro Max": [
+    {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹148,900"},
+    {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹154,900"},
+    {"RAM": "8 GB", "Storage": "1 TB", "PriceINR": "₹199,900"}
+  ],
+  "iPhone 16": [
+    {"RAM": "8 GB", "Storage": "128 GB", "PriceINR": "₹72,300"},
+    {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹82,900"},
+    {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹84,100"}
+  ],
+  "iPhone 16 Plus": [
+    {"RAM": "8 GB", "Storage": "128 GB", "PriceINR": "₹81,900"},
+    {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹92,900"},
+    {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹115,900"}
+  ],
+  "iPhone 16 Pro": [
+    {"RAM": "8 GB", "Storage": "128 GB", "PriceINR": "₹111,900"},
+    {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹123,900"},
+    {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹143,900"},
+    {"RAM": "8 GB", "Storage": "1 TB", "PriceINR": "₹169,900"}
+  ],
+  "iPhone 16 Pro Max": [
+    {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹132,900"},
+    {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹154,900"},
+    {"RAM": "8 GB", "Storage": "1 TB", "PriceINR": "₹169,900"}
+  ],
+  "iPhone 16e": [
+    {"RAM": "8 GB", "Storage": "128 GB", "PriceINR": "₹53,600"},
+    {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹69,900"},
+    {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹84,100"}
+  ]
+}
