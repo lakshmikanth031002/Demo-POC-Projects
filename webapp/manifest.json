@@ -93,6 +93,11 @@
           ]
         },
         {
+          "name": "RoutePOCreatePage",
+          "pattern": "RoutePOCreatePage",
+          "target":  "TargetPOCreatePage"
+        },
+        {
           "name": "RouteCatalogOrderPage",
           "pattern": "RouteCatalogOrderPage",
           "target":  "TargetCatalogOrderPage"
@@ -112,6 +117,10 @@
         "TargetLoginPage": {
           "id": "LoginPage",
           "name": "LoginPage"
+        },
+        "TargetPOCreatePage": {
+          "id": "POCreatePage",
+          "name": "POCreatePage"
         },
         "TargetCatalogOrderPage": {
           "id": "CatalogOrderPage",

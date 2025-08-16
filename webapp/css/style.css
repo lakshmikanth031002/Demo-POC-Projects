@@ -44,45 +44,8 @@ font-family: fantasy;
 .imagePane, .loginPane {
     overflow: hidden;
 } 
-/* hide the scroll bar and split bar */
-
-.mainContent {
-    width: 100%;
-}
-
-#userMenuPopover {
-    padding: 10px;
-}
-
-#userMenuPopover .sapMBtn {
-    width: 100%;
-    text-align: left;
-}
-.customComboBox .sapMComboBoxBase {
-    box-shadow: none !important;
-    border: none !important;
-}
-.customComboBox .sapMComboBoxBaseInner {
-    box-shadow: none !important;
-    border: none !important;
-    outline: none !important;
-}
-.customComboBox .sapMComboBoxArrow {
-    display: none !important;
-}
-.customComboBox .sapMInputIcon {
-    display: none !important;
-}
-.customComboBox .sapMComboBoxBaseInner {
-    padding-right: 0 !important;
-}
 
 
-
-.categoryPanel {
-    background-color: #e0e0e0;
-    padding: 20px;
-}
 
 .categoryBox , .CimageHbox{
     margin: 10px;
@@ -91,9 +54,6 @@ font-family: fantasy;
     border-radius: 5px; */
     padding: 10px;
     text-align: center;
-}
-.menuBar{
-    background-color: none !important;
 }
 
 .categoryText {
@@ -114,93 +74,44 @@ font-family: fantasy;
     width: 200px !important;
 }
 
-.backgroundImagePage , .catalogOrderPage {
-    background-image: url("https://wallpaperbat.com/img/812380-trendy-background-ideas-for-your-website.jpg");
+.PhonePage {
+    background-image: url("/Images/Background Images/TP Background Image.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center; 
     height: 100%;
 }
 
+.catalogOrderPage {
+    background-image: url("/Images/Background Images/SP Background Image.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.MainPage{
+    background-image: url("/Images/Background Images/FP Background Image.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;  
+}
 
 
+.overlayHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: none;
+    padding: 10px;
+}
 
-
-
-/* webapp/css/style.css */
-
-.iphone15Layout , .backgroundImagePage , .catalogOrderPage{
+.iphone15Layout , .PhonePage , .catalogOrderPage{
     background-color: #fff;
     padding: 20px;
     border: 2px solid #8b4513;
     border-radius: 5px;
-}
-
-.iphoneTitle {
-    font-size: 45px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: red;
-}
-
-.separator {
-    height: 2px;
-    background-color: #000;
-    margin: 10px 0;
-}
-
-.specText {
-    font-size: 14px;
-    color: #333;
-    margin: 5px 0;
-}
-
-.footer {
-    border-top: 1px solid #8b4513;
-    padding-top: 10px;
-}
-
-.brandText {
-    color: #ff0000;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.linkText {
-    color: #8b4513;
-    font-size: 14px;
-    margin-left: 5px;
-}
-
-
-
-
-
-
-/* webapp/css/style.css */
-
-.specLayout {
-    background-color: #f0f8ff;
-    padding: 20px;
-}
-
-.specTable {
-    /* border: 1px solid #ccc; */
-    border-radius: 5px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-}
-
-.specTable .sapMTableTH {
-    background-color: #e6f3ff;
-    font-weight: bold;
-}
-
-.specTable .sapMTableRow {
-    border-bottom: 1px solid #ddd;
-}
-
-.specTable .sapMTableRow:last-child {
-    border-bottom: none;
 }
 
 .Category {
@@ -210,14 +121,6 @@ font-family: fantasy;
     color: black;
 }
 
-
-
-/* webapp/css/style.css */
-
-.iphone14ProLayout {
-    background-color: #fff;
-    padding: 20px;
-}
 
 .specTitle {
     font-size: 40px;
@@ -236,9 +139,4 @@ font-family: fantasy;
     font-weight: bold;
     color: #ff4040;
     margin-top: 10px;
-}
-
-
-#RSButton{
-    padding-top: 1000px;
 }

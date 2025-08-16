@@ -2,81 +2,72 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     displayBlock="true"
-    xmlns="sap.m">
-    <Shell>
-    <App>
-        <pages>
-            <Page title="Royal Enfield" showNavButton="false">
-                    <!-- Top Navigation Bar -->
-                <customHeader>
-                    <Bar>
-                        <contentLeft>
-                            <Image src="Images/Company Name.jpg" width="150px" height="30px"/>
-                        </contentLeft>
-                        <contentMiddle>
-                            <Button class="buttoncolor" text="Home" type="Transparent" press="onNavPress"/>
-                        </contentMiddle>
-                        <contentRight>
-                            <Button icon="sap-icon://question-mark" type="Transparent" press="onUserMenuPress"/>
-                            <Button icon="sap-icon://headset" type="Transparent" press="onUserMenuPress"/>
-                        <MenuButton icon="sap-icon://person-placeholder">
-				            <Menu>
-					            <MenuItem text="Settings" icon="sap-icon://action-settings" press="onPress"/>
-					            <MenuItem text="About" icon="sap-icon://high-priority" press="onPress" />
-					            <MenuItem text="Sign Out" icon="sap-icon://log" press="onPress" />
-				            </Menu>
-		                </MenuButton>
-                        </contentRight>
-                    </Bar>
-                </customHeader>
-
-                <Toolbar id="Toolbarbutton" height="50px">
-                <MenuButton text="Purchase">
-			        <!-- <menu> -->
-				    <Menu>
-					<MenuItem text="Purchase Order Create" press="onPurchaseOrderCreate" />
-					<MenuItem text="Catalogue Order" press="onPressCatalogOrder" />
-                    <MenuItem text="Order Below Despatch Limit" press="onPress" />
-                    <MenuItem text="Approved Purchase Order" press="onPress" />
-                    <MenuItem text="Order Summary List" press="onPress" />
-                    <MenuItem text="FOC,Demo and Warranty Order" press="onPress" />
-				    </Menu>
-			        <!-- </menu> -->
-		        </MenuButton>
-                <MenuButton text="Finance">
-                </MenuButton>
-                <MenuButton text="Warranty">
-                </MenuButton>
-                <MenuButton text="Publications">
-                </MenuButton>
-                </Toolbar>
-                    <!-- Main Content -->
-                    <content>
-                        <VBox class="mainContent">
-                            <Carousel id="imageCarousel" loop="true" showPageIndicator="true" height="700px">
-                                <pages>
-                                    <Image src="Images/Iphone16/image1.jpg" width="100%" height="100%" alt="Image1"/>
-                                    <Image src="Images/Iphone16/image2.jpg" width="100%" height="100%" alt="Image2"/>
-                                    <Image src="Images/Iphone16/image3.jpg" width="100%" height="100%" alt="Image3"/>
-                                    <Image src="Images/Iphone16/image4.jpg" width="100%" height="100%" alt="Image4"/>
-                                    <Image src="Images/Iphone16/image5.jpg" width="100%" height="100%" alt="Image5"/>
-                                    <Image src="Images/Iphone16/image6.jpg" width="100%" height="100%" alt="Image6"/>
-                                </pages>
-                            </Carousel>
-                        </VBox>
-                    </content>
-
-                    <!-- User Menu (Popover) -->
-                    <Popover id="userMenuPopover" placement="Bottom" showHeader="false" contentWidth="200px">
-                        <VBox>
-                            <Button text="test UKTC" type="Transparent" press="onMenuItemPress"/>
-                            <Button text="Settings" type="Transparent" press="onMenuItemPress"/>
-                            <Button text="About" type="Transparent" press="onMenuItemPress"/>
-                            <Button text="Sign Out" type="Transparent" press="onMenuItemPress"/>
-                        </VBox>
-                    </Popover>
-                </Page>
-            </pages>
-        </App>
-    </Shell>
+    xmlns="sap.m"
+    height="100%">
+    <Page class="MainPage" showHeader="false">
+        <VBox>
+            <core:HTML id="videoPlayer" content='&lt;video controls autoplay muted loop width="100%"&gt;
+            &lt;source src="https://www.apple.com/105/media/ww/iphone/family/2025/e7ff365a-cb59-4ce9-9cdf-4cb965455b69/anim/welcome3/large_2x.mp4" type="video/mp4"&gt;
+            Your browser does not support the video tag.
+            &lt;/video&gt;'/>
+            <!-- <HBox class="overlayHeader" alignContent="End" justifyContent="End">
+                <Carousel showPageIndicator="false" class="noBackground"
+                        width="600px" height="600px" >
+                    <pages>
+                        <Image src="Images/Iphone16/image1.jpg" alt="Image1"/>
+                        <Image src="Images/Iphone16/image2.jpg" alt="Image2"/>
+                        <Image src="Images/Iphone16/image3.jpg" alt="Image3"/>
+                        <Image src="Images/Iphone16/image4.jpg" alt="Image4"/>
+                        <Image src="Images/Iphone16/image5.jpg" alt="Image5"/>
+                        <Image src="Images/Iphone16/image6.jpg" alt="Image6"/>
+                    </pages>
+                </Carousel>
+            </HBox> -->
+            <HBox class="overlayHeader">
+                <HBox class="CimageHbox" width="50%">
+                    <MenuButton icon="sap-icon://menu2" buttonMode="Split" useDefaultActionOnly="true">
+                        <menu>
+                            <Menu itemSelected="onMenuAction">
+                                <MenuItem text="Purchase" icon="sap-icon://chalkboard">
+                                    <items>
+                                        <MenuItem text="Purchase Order Create" press="onPurchaseOrderCreate" />
+                                        <MenuItem text="Catalogue Order" press="onPressCatalogOrder" />
+                                        <MenuItem text="Order Below Despatch Limit" press="onPress" />
+                                        <MenuItem text="Approved Purchase Order" press="onPress" />
+                                        <MenuItem text="Order Summary List" press="onPress" />
+                                        <MenuItem text="FOC,Demo and Warranty Order" press="onPress" />
+                                    </items>
+                                </MenuItem>
+                                <MenuItem text="Finance" icon="sap-icon://customer-financial-fact-sheet">
+                                    <items>
+                                        <MenuItem text="square" icon="sap-icon://status-completed" />
+                                    </items>
+                                </MenuItem>
+                                <MenuItem text="Warranty" icon="sap-icon://quality-issue">
+                                    <items>
+                                        <MenuItem text="sample" icon="sap-icon://status-completed" />
+                                    </items>
+                                </MenuItem>
+                                <MenuItem text="Publications" icon="sap-icon://bus-public-transport">
+                                    <items>
+                                        <MenuItem text="sample 1" icon="sap-icon://status-completed" />
+                                    </items>
+                                </MenuItem>
+                            </Menu>
+                        </menu>
+                    </MenuButton>
+                    <Image src="Images/Company Name.png" width="150px" height="40px"/>
+                </HBox>
+                <!-- <HBox justifyContent="End" alignContent="End" alignItems="Center">
+                    <MenuButton icon="sap-icon://person-placeholder">
+                        <Menu>
+                            <MenuItem text="Settings" icon="sap-icon://action-settings" press="onPress"/>
+                            <MenuItem text="About" icon="sap-icon://high-priority" press="onPress" />
+                            <MenuItem text="Sign Out" icon="sap-icon://log" press="onPress" />
+                        </Menu>
+                    </MenuButton>
+                </HBox> -->
+            </HBox>
+        </VBox>
+    </Page>
 </mvc:View>
