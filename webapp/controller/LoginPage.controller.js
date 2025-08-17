@@ -4,50 +4,25 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("ladera.mobiles.controller.LoginPage", {
-    onInit() {
-
-        const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-        const oTarget = oRouter.getTarget("LoginPage"); // must match the 'name' in manifest.json route config
-            if (oTarget) {
-                oTarget.attachDisplay(this._onViewVisible, this);
-                oTarget.attachHide(this._onViewHidden, this);
-            }
-    },
-
-// Video Autopaly and Autopause Code 
-
-    _onViewVisible: function () {
-            const oVideo = this._getVideoDom();
-            if (oVideo) {
-                oVideo.play();
-            }
+        onInit() {
         },
-        _onViewHidden: function () {
-            const oVideo = this._getVideoDom();
-            if (oVideo) {
-                oVideo.pause();
-            }
+        onShowPassword: function (oEvent) {
+            var bSelected = oEvent.getParameter("selected");
+            this.byId("passwordInput").setType(bSelected ? "Text" : "Password");
         },
-        _getVideoDom: function () {
-            const oHTML = this.byId("videoPlayer");
-            if (oHTML) {
-                const oDomRef = oHTML.getDomRef();
-                return oDomRef ? oDomRef.querySelector("#myVideo") : null;
+        onLoginPress : function() {
+
+            var sUsername = this.byId("usernameInput").getValue();
+            var sPassword = this.byId("passwordInput").getValue();
+            if (sUsername && sPassword) {
+                sap.m.MessageToast.show("Logging in...");
+            } else {
+                sap.m.MessageToast.show("Please enter both username and password.");
             }
-            return null;
-        },
-    
 
-// Navigation to CatalogPage
-    onPressCatalogOrder: function() {
-        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteCatalogOrderPage") 
-    },
+            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("RouteMainPage")  
 
-// Navigation to PurchaseOrder Create Page
-    onPurchaseOrderCreate: function() {
-        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RoutePOCreatePage")
-    }    
+        }
     });
 });

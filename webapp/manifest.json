@@ -93,6 +93,11 @@
           ]
         },
         {
+          "name": "RouteMainPage",
+          "pattern": "RouteMainPage",
+          "target": "TargetMainPage"
+        },
+        {
           "name": "RoutePOCreatePage",
           "pattern": "RoutePOCreatePage",
           "target":  "TargetPOCreatePage"
@@ -117,6 +122,10 @@
         "TargetLoginPage": {
           "id": "LoginPage",
           "name": "LoginPage"
+        },
+        "TargetMainPage": {
+          "id": "MainPage",
+          "name": "MainPage"
         },
         "TargetPOCreatePage": {
           "id": "POCreatePage",

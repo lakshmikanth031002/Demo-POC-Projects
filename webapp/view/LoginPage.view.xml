@@ -1,73 +1,52 @@
 <mvc:View controllerName="ladera.mobiles.controller.LoginPage"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:core="sap.ui.core"
-    displayBlock="true"
-    xmlns="sap.m"
-    height="100%">
-    <Page class="MainPage" showHeader="false">
-        <VBox>
-            <core:HTML id="videoPlayer" content='&lt;video controls autoplay muted loop width="100%"&gt;
-            &lt;source src="https://www.apple.com/105/media/ww/iphone/family/2025/e7ff365a-cb59-4ce9-9cdf-4cb965455b69/anim/welcome3/large_2x.mp4" type="video/mp4"&gt;
-            Your browser does not support the video tag.
-            &lt;/video&gt;'/>
-            <!-- <HBox class="overlayHeader" alignContent="End" justifyContent="End">
-                <Carousel showPageIndicator="false" class="noBackground"
-                        width="600px" height="600px" >
-                    <pages>
-                        <Image src="Images/Iphone16/image1.jpg" alt="Image1"/>
-                        <Image src="Images/Iphone16/image2.jpg" alt="Image2"/>
-                        <Image src="Images/Iphone16/image3.jpg" alt="Image3"/>
-                        <Image src="Images/Iphone16/image4.jpg" alt="Image4"/>
-                        <Image src="Images/Iphone16/image5.jpg" alt="Image5"/>
-                        <Image src="Images/Iphone16/image6.jpg" alt="Image6"/>
-                    </pages>
-                </Carousel>
-            </HBox> -->
-            <HBox class="overlayHeader">
-                <HBox class="CimageHbox" width="50%">
-                    <MenuButton icon="sap-icon://menu2" buttonMode="Split" useDefaultActionOnly="true">
-                        <menu>
-                            <Menu itemSelected="onMenuAction">
-                                <MenuItem text="Purchase" icon="sap-icon://chalkboard">
-                                    <items>
-                                        <MenuItem text="Purchase Order Create" press="onPurchaseOrderCreate" />
-                                        <MenuItem text="Catalogue Order" press="onPressCatalogOrder" />
-                                        <MenuItem text="Order Below Despatch Limit" press="onPress" />
-                                        <MenuItem text="Approved Purchase Order" press="onPress" />
-                                        <MenuItem text="Order Summary List" press="onPress" />
-                                        <MenuItem text="FOC,Demo and Warranty Order" press="onPress" />
-                                    </items>
-                                </MenuItem>
-                                <MenuItem text="Finance" icon="sap-icon://customer-financial-fact-sheet">
-                                    <items>
-                                        <MenuItem text="square" icon="sap-icon://status-completed" />
-                                    </items>
-                                </MenuItem>
-                                <MenuItem text="Warranty" icon="sap-icon://quality-issue">
-                                    <items>
-                                        <MenuItem text="sample" icon="sap-icon://status-completed" />
-                                    </items>
-                                </MenuItem>
-                                <MenuItem text="Publications" icon="sap-icon://bus-public-transport">
-                                    <items>
-                                        <MenuItem text="sample 1" icon="sap-icon://status-completed" />
-                                    </items>
-                                </MenuItem>
-                            </Menu>
-                        </menu>
-                    </MenuButton>
-                    <Image src="Images/Company Name.png" width="150px" height="40px"/>
-                </HBox>
-                <!-- <HBox justifyContent="End" alignContent="End" alignItems="Center">
-                    <MenuButton icon="sap-icon://person-placeholder">
-                        <Menu>
-                            <MenuItem text="Settings" icon="sap-icon://action-settings" press="onPress"/>
-                            <MenuItem text="About" icon="sap-icon://high-priority" press="onPress" />
-                            <MenuItem text="Sign Out" icon="sap-icon://log" press="onPress" />
-                        </Menu>
-                    </MenuButton>
-                </HBox> -->
-            </HBox>
-        </VBox>
+    xmlns:layout="sap.ui.layout"
+    xmlns="sap.m">
+    <Page id="page" title="Royal Enfield">
+    <layout:Splitter height="100%" class="loginContainer" >
+                <VBox class="imagePane">
+                    <Image
+                        src="Images/loginPage Image.jpg" 
+                        class="fullHeightImage"/>
+                </VBox>
+                <VBox class="loginPane">
+                    <Panel class="loginForm">
+                        <Title class="tittle"
+                            text="Welcome Back"
+                            level="H2"
+                            titleStyle="H2"
+                            textAlign="Center"/>
+                        <!-- <Text
+                            text="Log in to your account"
+                            class="sapUiSmallMarginBottom"
+                            textAlign="Center"/> -->
+                        <Input
+                            id="usernameInput"
+                            placeholder="Enter username or email"
+                            width="100%"
+                            class="sapUiSmallMarginBottom"/>
+                        <Input
+                            id="passwordInput"
+                            type="Password"
+                            placeholder="Enter password"
+                            width="100%"
+                            class="sapUiSmallMarginBottom"/>
+                        <CheckBox
+                            text="Show Password"
+                            select=".onShowPassword"
+                            class="sapUiSmallMarginBottom"/>
+                        <Button
+                            text="Log In"
+                            type="Emphasized"
+                            width="100%"
+                            press="onLoginPress"
+                            class="sapUiSmallMarginBottom"/>
+                        <Link
+                            text="Forgot Password?"
+                            href="#"
+                            textAlign="Center"/>
+                    </Panel>
+                </VBox>
+    </layout:Splitter>  
     </Page>
 </mvc:View>

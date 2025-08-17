@@ -1,87 +1,264 @@
-<mvc:View
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m"
-  xmlns:core="sap.ui.core"
-  controllerName="ladera.mobiles.controller.POCreatePage"
-  displayBlock="true">
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          xmlns:core="sap.ui.core"
+          xmlns:uxap="sap.uxap"
+          xmlns:l="sap.ui.layout"
+          xmlns:info="loginapplication.SharedBlocks.Info.Info"
+          xmlns:ut="sap.ui.table"
+          xmlns:rowmodes="sap.ui.table.rowmodes"
+          xmlns:u="sap.ui.unified"
+          controllerName="ladera.mobiles.controller.POCreatePage"
+          displayBlock="true"
+          height="100%">
 
-  <Page title="Create New Purchase Order" showHeader="true">
-    
-    <!-- Header Section -->
-    <VBox class="sapUiSmallMargin">
-      <HBox>
-        <VBox width="50%">
-          <Label text="Purchase Type" />
-          <Select selectedKey="nonVehicle">
-            <items>
-              <core:Item key="nonVehicle" text="Non Vehicle" />
-              <core:Item key="vehicle" text="Vehicle" />
-            </items>
-          </Select>
-        </VBox>
+  <Page title="Royal Enfield" showNavButton="false" showHeader="false">
 
-        <VBox width="50%">
-          <Label text="Payment Type" />
-          <Select>
-            <items>
-              <core:Item text="Order using WF" />
-              <core:Item text="Order using Credit" />
-            </items>
-          </Select>
-        </VBox>
-      </HBox>
+    <uxap:ObjectPageLayout showTitleInHeaderContent="true">
 
-      <HBox>
-        <VBox width="50%">
-          <Label text="Dealer No." />
-          <Input value="11" />
-        </VBox>
+      <!-- Page Title -->
+      <uxap:headerTitle>
+        <uxap:ObjectPageDynamicHeaderTitle>
+          <uxap:expandedHeading>
+            <Title level="H1" text="Create New Purchase Order : 3500094"/>
+          </uxap:expandedHeading>
+        </uxap:ObjectPageDynamicHeaderTitle>
+      </uxap:headerTitle>
 
-        <VBox width="50%">
-          <Label text="PO Ref Date" />
-          <DatePicker valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" />
-        </VBox>
-      </HBox>
+      <!-- INFO SECTION -->
+      <uxap:sections>
+        <uxap:ObjectPageSection titleLevel="H6" title="INFO" titleUppercase="false">
+          <uxap:subSections>
+            <uxap:ObjectPageSubSection>
+              <uxap:blocks>
+                <HBox>
 
-      <Label text="Ship To Party" class="sapUiSmallMarginTop"/>
-      <Input value="A & M Motorcycles Ltd" />
+                  <!-- First VBox -->
+                  <VBox class="index" width="285px">
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Purchase Type:" width="100px" textAlign="End"/>
+                      <Select selectedKey="Vehicle" width="150px">
+                        <core:Item key="1" text=""/>
+                        <core:Item key="2" text="Vehicle"/>
+                        <core:Item key="3" text="Spare Part"/>
+                      </Select>
+                    </HBox>
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Ship To Party:" width="100px" textAlign="End"/>
+                      <Select selectedKey="" width="150px">
+                        <core:Item key="2" text="Sample"/>
+                        <core:Item key="3" text="Other Party"/>
+                      </Select>
+                    </HBox>
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Address:" width="100px" textAlign="End"/>
+                      <Text text="1, Diamond Industrial Centre, Work Letchworth Garden City SG6 1LW" width="150px"/>
+                    </HBox>
+                  </VBox>
 
-      <Label text="Address" />
-      <Text text="1, Diamond Industrial Centre, Work, Letchworth Garden City, SG6 1LW" />
-    </VBox>
+                  <!-- Second VBox -->
+                  <VBox class="index" width="285px">
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Payment Type:" width="100px" textAlign="End"/>
+                      <Select selectedKey="OrderWF" width="150px">
+                        <core:Item key="1" text=""/>
+                        <core:Item key="2" text="Order using WF ..."/>
+                        <core:Item key="3" text="Cash"/>
+                      </Select>
+                    </HBox>
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Ship To Party:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="PO Ref Date:" width="100px" textAlign="End"/>
+                      <DatePicker placeholder="e.g. 31/12/2025" width="150px" valueFormat="dd/MM/yyyy" displayFormat="dd/MM/yyyy"/>
+                    </HBox>
+                  </VBox>
 
-    <!-- Table Section -->
-    <VBox class="sapUiSmallMarginTop">
-      <Toolbar>
-        <Title text="SEQ" level="H4"/>
-        <ToolbarSpacer />
-        <Button icon="sap-icon://add" press="onAddRow"/>
-      </Toolbar>
+                  <!-- Third VBox -->
+                  <VBox class="index" width="285px">
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Credit Limit:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                    <HBox id="currentOrderRow" class="inbox" width="270px">
+                      <Text class="inbox" text="Current Order:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Enable Unit Price:" width="100px" textAlign="End"/>
+                      <Switch id="preventExpand" change="onToggleUnitPrice"  type="AcceptReject" class="sapUiSmallMarginBottom"/>
+                    </HBox>
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Balance Credit:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                  </VBox>
 
-      <Table id="orderTable" items="{/OrderItems}">
-        <columns>
-          <Column><Text text="Seq" /></Column>
-          <Column><Text text="Part" /></Column>
-          <Column><Text text="Quantity" /></Column>
-          <Column><Text text="In Stock" /></Column>
-          <Column><Text text="ETA" /></Column>
-          <Column><Text text="MSRP" /></Column>
-        </columns>
+                  <!-- Fourth VBox -->
+                  <VBox class="index" width="285px">
+                    <HBox class="inbox" width="270px">
+                      <Text class="inbox" text="Total Order Quantity:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                    <HBox id="vatAmountRow" class="inbox" width="270px">
+                      <Text class="inbox" text="VAT Amount:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                    <HBox id="amountExVatRow" class="inbox" width="270px">
+                      <Text class="inbox" text="Total Amount Excluding VAT:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                    <HBox id="amountInVatRow" class="inbox" width="270px">
+                      <Text class="inbox" text="Total Amount Including VAT:" width="100px" textAlign="End"/>
+                      <Input width="150px"/>
+                    </HBox>
+                  </VBox>
 
-        <items>
-          <ColumnListItem>
-            <cells>
-              <Text text="{Seq}" />
-              <Input value="{Part}" />
-              <Input value="{Quantity}" type="Number" />
-              <Text text="{InStock}" />
-              <Text text="{ETA}" />
-              <Text text="{MSRP}" />
-            </cells>
-          </ColumnListItem>
-        </items>
-      </Table>
-    </VBox>
+                </HBox>
+              </uxap:blocks>
+            </uxap:ObjectPageSubSection>
+          </uxap:subSections>
+        </uxap:ObjectPageSection>
+
+        <!-- SEQ SECTION -->
+        <uxap:ObjectPageSection title="SEQ" titleUppercase="false">
+          <uxap:subSections>
+            <uxap:ObjectPageSubSection title="SEQ">
+              <uxap:blocks>
+                <VBox width="100%">
+
+                  <HBox height="40px">
+                    <RadioButtonGroup id="rbg3" select="onRadioSelect" columns="2" valueState="Error" class="sapUiMediumMarginBottom">
+                      <RadioButton id="RB3-1" text="Manual Selection"/>
+                      <RadioButton id="RB3-2" text="Excel Upload"/>
+                    </RadioButtonGroup>
+                  </HBox>
+
+                  <VBox id="manualSection" visible="true">
+
+                    <HBox width="100%" id="excelUploadSection" visible="false" justifyContent="Center" alignContent="Center">
+                      <l:VerticalLayout>
+                          <HBox>
+		                      <u:FileUploader id="fileUploader" name="myFileUpload"
+                                          uploadUrl="upload/" tooltip="Upload your file to the local server"
+                                          uploadComplete="handleUploadComplete" change="handleValueChange"
+                                          typeMissmatch="handleTypeMissmatch" style="Emphasized" fileType="txt,jpg"
+                                          placeholder="Choose a file for Upload..." width="350px"/>	
+		                      <Button text="Upload File" press="handleUploadPress"/>
+                          </HBox>
+                          <VBox height="30px">
+                              <Link text="Download Format"/>
+                          </VBox>
+	                    </l:VerticalLayout>
+                    </HBox>
+
+                  <!-- TABLE STARTS HERE -->
+                  <ut:Table id="stockTable"
+                            rows="{/OrderItems}"
+                            selectionMode="MultiToggle"
+                            ariaLabelledBy="title"
+                            enableCellFilter="true"
+                            fixedColumnCount="2">
+
+                    <!-- Toolbar with Add / Remove -->
+                    <ut:extension>
+                      <Toolbar>
+                        <Text text="{= 'Seq (' + ${/SeqCount} + ')' }" class="sapUiSmallMarginEnd sapMLabelBold"/>
+                        <Text text="Stock Legend |" class="sapUiTinyMarginEnd"/>
+                        <ObjectStatus text="Available" state="Success" icon="sap-icon://vertical-bar-chart" class="customLegend"/>
+                        <ObjectStatus text="Limited" state="Warning" icon="sap-icon://vertical-bar-chart" class="customLegend"/>
+                        <ObjectStatus text="Not Available" state="Error" icon="sap-icon://vertical-bar-chart" class="customLegend"/>
+                        <ToolbarSpacer/>
+                        <Button icon="sap-icon://add" type="Transparent" class="redAddButton" press="onAddRow"/>
+                        <Button icon="sap-icon://less" type="Transparent" class="redAddButton" press="onRemoveRow"/>
+                      </Toolbar>
+                    </ut:extension>
+
+                    <!-- Row Mode -->
+                    <ut:rowMode>
+                      <rowmodes:Fixed/>
+                    </ut:rowMode>
+
+                    <!-- Columns -->
+                    <ut:columns>
+
+                      <ut:Column width="50px">
+                        <Label text="Seq"/>
+                        <ut:template>
+                          <Text text="{Seq}"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="360px">
+                        <Label text="Part"/>
+                        <ut:template>
+                          <Input width="340px" value="{part}" showValueHelp="true" valueHelpRequest="onValueHelpRequest"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="140px">
+                        <Label text="Quantity"/>
+                        <ut:template>
+                          <Input width="120px" value="{quantity}" type="Number"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="140px">
+                        <Label text="In Stock"/>
+                        <ut:template>
+                          <ObjectStatus text="{inStock}" state="{= ${inStock} === 'Available' ? 'Success' : ${inStock} === 'Limited' ? 'Warning' : 'Error'}"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="140px">
+                        <Label text="ETA"/>
+                        <ut:template>
+                          <Text text="{eta}"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="140px">
+                        <Label text="MSRP"/>
+                        <ut:template>
+                          <Text text="{msrp}"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="140px">
+                        <Label text="Dealer Price"/>
+                        <ut:template>
+                          <Text text="{dealerprice}"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="140px">
+                        <Label text="VAT"/>
+                        <ut:template>
+                          <Text text="{vat}"/>
+                        </ut:template>
+                      </ut:Column>
+
+                      <ut:Column width="140px">
+                        <Label text="Amount"/>
+                        <ut:template>
+                          <Text text="{amount}"/>
+                        </ut:template>
+                      </ut:Column>
+
+                    </ut:columns>
+
+                  </ut:Table>
+                  </VBox>
+                </VBox>
+
+              </uxap:blocks>
+            </uxap:ObjectPageSubSection>
+          </uxap:subSections>
+        </uxap:ObjectPageSection>
+      </uxap:sections>
+
+    </uxap:ObjectPageLayout>
 
   </Page>
 </mvc:View>
