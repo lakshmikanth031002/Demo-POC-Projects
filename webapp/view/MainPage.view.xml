@@ -4,7 +4,7 @@
     displayBlock="true"
     xmlns="sap.m"
     height="100%">
-    <Page class="MainPage" showHeader="false">
+    <Page class="MainPage" showHeader="false"  showNavButton="true" navButtonPress="onNavBack">
         <VBox>
             <HBox   >
             <core:HTML id="videoPlayer" content='&lt;video controls autoplay muted loop width="100%"&gt;
@@ -27,7 +27,8 @@
             </HBox> -->
             <HBox class="overlayHeader">
                 <HBox class="CimageHbox" width="50%">
-                    <MenuButton icon="sap-icon://menu2" buttonMode="Split" useDefaultActionOnly="true">
+                    <Button icon="sap-icon://nav-back" press="onNavBackLoginPage"/>
+                    <MenuButton icon="sap-icon://menu2">
                         <menu>
                             <Menu itemSelected="onMenuAction">
                                 <MenuItem text="Purchase" icon="sap-icon://chalkboard">

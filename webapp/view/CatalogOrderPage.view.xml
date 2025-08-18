@@ -5,7 +5,8 @@
 <Page class="catalogOrderPage" showHeader="false">
     <VBox>
         <HBox>
-            <HBox class="CimageHbox" width="50%">
+            <HBox class="CimageHbox" width="50%" height="150px">
+            <Button icon="sap-icon://nav-back" press="onNavBackMainPage"/>
             <Image src="Images/Company Name.png" width="150px" height="40px"/>
             </HBox>
             <!-- <HBox>

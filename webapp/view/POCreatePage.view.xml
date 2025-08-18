@@ -19,7 +19,7 @@
       <uxap:headerTitle>
         <uxap:ObjectPageDynamicHeaderTitle>
           <uxap:expandedHeading>
-            <Title level="H1" text="Create New Purchase Order : 3500094"/>
+            <Title level="H1" text="Create New Purchase Order"/>
           </uxap:expandedHeading>
         </uxap:ObjectPageDynamicHeaderTitle>
       </uxap:headerTitle>

@@ -2,7 +2,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:layout="sap.ui.layout"
     xmlns="sap.m">
-    <Page id="page" title="Royal Enfield">
+    <Page id="page" title="Royal Enfield" showHeader="false">
     <layout:Splitter height="100%" class="loginContainer" >
                 <VBox class="imagePane">
                     <Image

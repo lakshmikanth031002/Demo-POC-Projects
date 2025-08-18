@@ -9,6 +9,7 @@
     <Page title="" showNavButton="false" class="iphone15Layout" showHeader="false">
         <content>
             <HBox>
+            <Button icon="sap-icon://nav-back" press="onNavBackPhonePage"/>
                 <VBox height="70%" width="50%" justifyContent="Center" alignItems="Center" class="sapUiMediumMarginTop">
                     <Image id="iPhoneFullImage" src="{phoneData>/0/imageUrl}" alt="iPhone 15 Back" width="400px" height="400px"/>
                         <HBox justifyContent="Center" alignItems="Center" height="100px">

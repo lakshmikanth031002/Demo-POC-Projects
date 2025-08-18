@@ -47,6 +47,20 @@ sap.ui.define([
     onPurchaseOrderCreate: function() {
         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             oRouter.navTo("RoutePOCreatePage")
-    }    
+    },
+
+// Navigation Back to Login Page
+    onNavBackLoginPage: function () {
+        var oHistory = sap.ui.core.routing.History.getInstance();
+        var sPreviousHash = oHistory.getPreviousHash();
+
+        if (sPreviousHash !== undefined) {
+            window.history.go(-1); // Navigate back in browser history
+        } else {
+            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("RouteLoginPage", {}, true); // Navigate to a default route if no history exists
+        }
+    }
+
     });
 });

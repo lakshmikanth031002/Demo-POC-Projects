@@ -11,21 +11,16 @@ html, body, .sapUiBody { height: 100%; margin: 0; overflow: hidden; }
 
 .fullHeightImage { width: 100%; height: 500PX; object-fit: cover; }
 
-.tittle { color: red ; font-family: fantasy; }
+.tittle { color: rgb(57, 19, 227) ; font-family: fantasy; }
 
 /* hide the scroll bar and split bar */
 .loginContainer .sapUiLoSplitterBar { display: none !important; width: 0 !important; }
 
 .imagePane, .loginPane { overflow: hidden;} 
 
-.categoryBox , .CimageHbox{ margin: 10px; background-color: none; padding: 10px; text-align: center;
-    /* border: 1px solid #ccc;
-    border-radius: 5px; */ }
+.categoryBox , .CimageHbox{ margin: 10px; background-color: none; padding: 10px; text-align: center; }
 
-.inbox{ margin: 7px; background-color: none; border-radius: 5px;
-    /* border: 1px solid #0e0d0d; */ 
-    /* padding: 5px; */
-    /* text-align: center; */}
+.inbox{ margin: 7px; background-color: none; border-radius: 5px;}
 
 .categoryText { font-size: 16px; font-weight: bold; margin-top: 10px; }
 
@@ -37,7 +32,7 @@ html, body, .sapUiBody { height: 100%; margin: 0; overflow: hidden; }
 .PhonePage { background-image: url("/Images/Background Images/TP Background Image.jpg"); background-size: cover; 
              background-repeat: no-repeat; background-position: center; height: 100%;}
 
-.catalogOrderPage { background-image: url("/Images/Background Images/SP Background Image.jpg"); background-size: cover; 
+.catalogOrderPage { background-image: url("https://images.pexels.com/photos/7135020/pexels-photo-7135020.jpeg"); background-size: cover; 
                     background-repeat: no-repeat; background-position: center; }
     
 .MainPage{ background-image: url("/Images/Background Images/FP Background Image.jpg");  background-size: cover; 

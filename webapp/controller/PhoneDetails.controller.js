@@ -67,6 +67,19 @@ sap.ui.define([
     // RAM Storage view Fragment Cancel 
     onCancel: function() {
         this.RamStorage.close();
+    },
+
+// Navigation Back to Phone Page
+    onNavBackPhonePage: function () {
+        var oHistory = sap.ui.core.routing.History.getInstance();
+        var sPreviousHash = oHistory.getPreviousHash();
+
+        if (sPreviousHash !== undefined) {
+            window.history.go(-1); // Navigate back in browser history
+        } else {
+            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("RoutePhonePage", {}, true); // Navigate to a default route if no history exists
+        }
     }
 
 

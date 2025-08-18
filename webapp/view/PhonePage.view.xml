@@ -7,6 +7,7 @@
     <Page class="PhonePage" showHeader="false" >
            <VBox height="100%" width="70%">
            <HBox height="150px">
+                <Button icon="sap-icon://nav-back" press="onNavBackCatalogPage"/>
                 <Select
                 id="iphoneSelect"
                 width="250px"
