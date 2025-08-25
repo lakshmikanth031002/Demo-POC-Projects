@@ -4,38 +4,58 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("ladera.mobiles.controller.PhonePage", {
-    onInit() {
-        
-    },
+        onInit() {
 
-    onSelectionChange: function (oEvent) {
+           var oData = this.getOwnerComponent().oModels.Phones.oData;
+           var aImages = [];
+           oData.forEach(function (phone) {
+                    if (phone.images && phone.images.length) {
+                        aImages = aImages.concat(phone.images);
+                    }
+                });
 
-            var sSelectedKey = oEvent.getParameter("selectedItem").getKey();
-            var oModel = this.getView().getModel("Phones");
-            var oData = oModel.getData();
-            var SelectedImages =new sap.ui.model.json.JSONModel(oData.find(item => item.key === sSelectedKey).images);
-            // oData.selectedImage = SelectedImages;
-            this.getView().byId("Flexboxvalue").setModel(SelectedImages, "Images");
-            oModel.refresh(); 
+            var oImagesModel = new sap.ui.model.json.JSONModel(aImages);
+            this.getView().byId("Flexboxvalue").setModel(oImagesModel, "Images");
+
         },
-    onCategoryPress:function (oEvent) {
+
+        onSelectionChange: function (oEvent) {
+            var sSelectedKey = oEvent.getParameter("selectedItem").getKey();
+            var oData = this.getView().getModel("Phones").getData();
+            var aImages = [];
+
+            if (sSelectedKey === "AllModels") {
+                // Flatten all images arrays into one array
+                oData.forEach(function (phone) {
+                    if (phone.images && phone.images.length) {
+                        aImages = aImages.concat(phone.images);
+                    }
+                });
+            } else {
+
+                // Find images for selected phone
+                var selectedPhone = oData.find(function (phone) {
+                    return phone.key === sSelectedKey;
+                });
+                if (selectedPhone && selectedPhone.images) {
+                    aImages = selectedPhone.images;
+                }
+            }
+            var oImagesModel = new sap.ui.model.json.JSONModel(aImages);
+            this.getView().byId("Flexboxvalue").setModel(oImagesModel, "Images");
+
+        },
+        onCategoryPress: function (oEvent) {
             var SelectedModel = oEvent.getSource().mProperties.header;
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RoutePhoneDetailsPage",{"ModelName": SelectedModel})  
-    },
+            oRouter.navTo("RoutePhoneDetailsPage", { "ModelName": SelectedModel })
+        },
 
-// Navigation Back to Catalog Page
-    onNavBackCatalogPage: function () {
-        var oHistory = sap.ui.core.routing.History.getInstance();
-        var sPreviousHash = oHistory.getPreviousHash();
-
-        if (sPreviousHash !== undefined) {
-            window.history.go(-1); // Navigate back in browser history
-        } else {
+        // Navigation Back to Catalog Page
+        onNavBackCatalogPage: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteCatalogOrderPage", {}, true); // Navigate to a default route if no history exists
+            oRouter.navTo("RouteCatalogOrderPage", {}, true);
         }
-    }
 
     });
 });

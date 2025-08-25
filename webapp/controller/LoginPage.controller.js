@@ -10,19 +10,32 @@ sap.ui.define([
             var bSelected = oEvent.getParameter("selected");
             this.byId("passwordInput").setType(bSelected ? "Text" : "Password");
         },
-        onLoginPress : function() {
+        onLoginPress: function () {
 
-            var sUsername = this.byId("usernameInput").getValue();
-            var sPassword = this.byId("passwordInput").getValue();
-            if (sUsername && sPassword) {
-                sap.m.MessageToast.show("Logging in...");
-            } else {
+            var oUsernameInput = this.byId("usernameInput");
+            var oPasswordInput = this.byId("passwordInput");
+
+            var sUsername = oUsernameInput.getValue();
+            var sPassword = oPasswordInput.getValue();
+
+            if (!sUsername || !sPassword) {
                 sap.m.MessageToast.show("Please enter both username and password.");
+                return;
             }
 
-            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteMainPage")  
+            if (sUsername === "TECH_23" && sPassword === "LADERA") {
+                sap.m.MessageToast.show("Logging in...");
 
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter.navTo("RouteMainPage");
+            } else {
+                sap.m.MessageToast.show("Invalid username or password. Please try again.");
+
+                oUsernameInput.setValue("");
+                oPasswordInput.setValue("");
+            }
         }
+
+
     });
 });

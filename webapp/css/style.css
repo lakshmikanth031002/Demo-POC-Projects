@@ -1,46 +1,51 @@
 /* Enter your custom styles here */
 html, body, .sapUiBody { height: 100%; margin: 0; overflow: hidden; }
 
-.loginContainer { height: 100%; width: 100%; }
+.LoginPageclass { background-image: url("/Images/RedLoginImage.jpg"); background-size: cover; 
+                  background-repeat: no-repeat; background-position: center; height: 100%; }
 
-.imagePane { height: 100%; display: flex; align-items: center; justify-content: center; background-color: #ffffff;  }
+.PhonePage { background-image: url("/Images/Background Images/Background Image WaterMark.jpg"); background-size: cover; 
+                  background-repeat: no-repeat; background-position: center; height: 100%; }
 
-.loginPane { height: 100%; display: flex; align-items: center; justify-content: center; background-color: #ffffff; }
+.loginContainer { height: 100%; width: 100%;  }
 
-.loginForm { width: 80%; max-width: 400px; }
+.imagePane { height: 100%; display: flex; align-items: center; justify-content: center; background-color: transparent !important; }
+
+.loginPane { height: 100%; display: flex; align-items: center; justify-content: center; background-color: transparent !important; }
+
+.loginForm .sapMLnk { display: block; margin-top: 1rem; text-align: center; color: white !important;}
 
 .fullHeightImage { width: 100%; height: 500PX; object-fit: cover; }
 
-.tittle { color: rgb(57, 19, 227) ; font-family: fantasy; }
-
-/* hide the scroll bar and split bar */
-.loginContainer .sapUiLoSplitterBar { display: none !important; width: 0 !important; }
+.tittle { color: white ; font-family: fantasy; }
 
 .imagePane, .loginPane { overflow: hidden;} 
 
-.categoryBox , .CimageHbox{ margin: 10px; background-color: none; padding: 10px; text-align: center; }
+.categoryBox{ margin-top: 100px; padding: 10px; text-align: center; }
 
 .inbox{ margin: 7px; background-color: none; border-radius: 5px;}
 
-.categoryText { font-size: 16px; font-weight: bold; margin-top: 10px; }
+.categoryText { font-size: 16px; font-weight: bold; margin-top: 15px; }
 
-/* Scales the image to fit within the tile */
 .smallBackgroundImage { background-size: 150px; background-repeat: no-repeat; background-position: center; }
 
-.tileLayout { float: left; height: 230px !important; width: 200px !important; }
+.tileContainer {
+    height: calc(100vh - 100px); /* adjust based on header height */
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.PhonePage { background-image: url("/Images/Background Images/TP Background Image.jpg"); background-size: cover; 
-             background-repeat: no-repeat; background-position: center; height: 100%;}
+.tileLayout { float: left; height: 230px !important; width: 200px !important; background-color: white; }
 
-.catalogOrderPage { background-image: url("https://images.pexels.com/photos/7135020/pexels-photo-7135020.jpeg"); background-size: cover; 
-                    background-repeat: no-repeat; background-position: center; }
-    
-.MainPage{ background-image: url("/Images/Background Images/FP Background Image.jpg");  background-size: cover; 
-           background-repeat: no-repeat; background-position: center; }
+.companyText { font-size: 80px; font-weight: bold; color: white; margin: 100px; font-family: 'Times New Roman', Times, serif;}
 
-.overlayHeader { position: absolute; top: 0; left: 0; width: 100%; z-index: 10; background: none; padding: 10px; }
+.iphone15Layout , .PhonePage .catalogOrderPage{ background-color: #fff; border: 2px solid #8b4513;  border-radius: 5px;}
 
-.iphone15Layout , .PhonePage , .catalogOrderPage{ background-color: #fff; padding: 20px;  border: 2px solid #8b4513;  border-radius: 5px;}
+.centerHeaderBar { background-color: white; height: 50px !important; display: flex !important; align-items: center !important;}
+
+.menuButtons .sapMBtnIcon {  color:#0c0c0c !important}
 
 .Category { font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; color: black; }
 
@@ -50,8 +55,6 @@ html, body, .sapUiBody { height: 100%; margin: 0; overflow: hidden; }
 
 .priceText { font-size: 32px; font-weight: bold; color: #ff4040; margin-top: 10px; }
 
-/* Make ObjectStatus texts smaller and tighter */
 .customLegend .sapMObjStatusText { font-size: 0.875rem; padding-left: 2px; padding-right: 12px; }
 
-/* Make red + icon */
-.redAddButton .sapMBtnIcon {  color: red; font-size: 1.2rem; }
+.redAddButton .sapMBtnIcon {  color: red !important; font-size: 1.2rem !important; }

@@ -6,35 +6,7 @@ sap.ui.define([
     return Controller.extend("ladera.mobiles.controller.MainPage", {
     onInit() {
 
-        const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-        const oTarget = oRouter.getTarget("LoginPage"); // must match the 'name' in manifest.json route config
-            if (oTarget) {
-                oTarget.attachDisplay(this._onViewVisible, this);
-                oTarget.attachHide(this._onViewHidden, this);
-            }
     },
-
-// Video Autopaly and Autopause Code 
-    _onViewVisible: function () {
-            const oVideo = this._getVideoDom();
-            if (oVideo) {
-                oVideo.play();
-            }
-        },
-        _onViewHidden: function () {
-            const oVideo = this._getVideoDom();
-            if (oVideo) {
-                oVideo.pause();
-            }
-        },
-        _getVideoDom: function () {
-            const oHTML = this.byId("videoPlayer");
-            if (oHTML) {
-                const oDomRef = oHTML.getDomRef();
-                return oDomRef ? oDomRef.querySelector("#myVideo") : null;
-            }
-            return null;
-        },
     
 
 // Navigation to CatalogPage
@@ -51,15 +23,9 @@ sap.ui.define([
 
 // Navigation Back to Login Page
     onNavBackLoginPage: function () {
-        var oHistory = sap.ui.core.routing.History.getInstance();
-        var sPreviousHash = oHistory.getPreviousHash();
-
-        if (sPreviousHash !== undefined) {
-            window.history.go(-1); // Navigate back in browser history
-        } else {
+        
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteLoginPage", {}, true); // Navigate to a default route if no history exists
-        }
+            oRouter.navTo("RouteLoginPage", {}, true); 
     }
 
     });

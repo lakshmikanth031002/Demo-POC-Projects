@@ -2,24 +2,20 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:layout="sap.ui.layout"
     xmlns="sap.m">
-    <Page id="page" title="Royal Enfield" showHeader="false">
-    <layout:Splitter height="100%" class="loginContainer" >
-                <VBox class="imagePane">
-                    <Image
-                        src="Images/loginPage Image.jpg" 
-                        class="fullHeightImage"/>
+    <Page id="page" title="Royal Enfield" showHeader="false" class="LoginPageclass">
+    <HBox height="100%" class="loginContainer" >
+                <VBox class="imagePane" alignContent="Center" justifyContent="Center" width="695px">
+                    <Text text="LADERA MOBILES" class="companyText"/>
                 </VBox>
-                <VBox class="loginPane">
-                    <Panel class="loginForm">
+                <VBox class="loginPane" width="250px">
+                    <Panel class="loginForm" backgroundDesign="Transparent">
+                        <HBox justifyContent="Center">
                         <Title class="tittle"
-                            text="Welcome Back"
-                            level="H2"
-                            titleStyle="H2"
+                            text="Welcome"
+                            level="H4"
+                            titleStyle="H4"
                             textAlign="Center"/>
-                        <!-- <Text
-                            text="Log in to your account"
-                            class="sapUiSmallMarginBottom"
-                            textAlign="Center"/> -->
+                        </HBox>
                         <Input
                             id="usernameInput"
                             placeholder="Enter username or email"
@@ -35,18 +31,20 @@
                             text="Show Password"
                             select=".onShowPassword"
                             class="sapUiSmallMarginBottom"/>
+                        <HBox alignContent="Center" justifyContent="Center">
                         <Button
                             text="Log In"
                             type="Emphasized"
-                            width="100%"
+                            width="100px"
                             press="onLoginPress"
                             class="sapUiSmallMarginBottom"/>
+                        </HBox>
                         <Link
                             text="Forgot Password?"
                             href="#"
                             textAlign="Center"/>
                     </Panel>
                 </VBox>
-    </layout:Splitter>  
+    </HBox>  
     </Page>
 </mvc:View>

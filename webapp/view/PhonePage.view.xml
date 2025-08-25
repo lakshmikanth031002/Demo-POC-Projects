@@ -5,7 +5,7 @@
     xmlns="sap.m"
     height="100%">
     <Page class="PhonePage" showHeader="false" >
-           <VBox height="100%" width="70%">
+           <VBox height="100%" width="100%">
            <HBox height="150px">
                 <Button icon="sap-icon://nav-back" press="onNavBackCatalogPage"/>
                 <Select

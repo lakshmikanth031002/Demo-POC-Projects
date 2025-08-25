@@ -42,7 +42,6 @@ sap.ui.define([
     
     //Ram Storage view Fragment Open
     onRamStoragePress: function() {
-
         var PhoneModel = this.getView().oModels.phoneData.oData.modelName;
         var oData = this.getOwnerComponent().oModels.RSPDetails.getData();
         var response = new sap.ui.model.json.JSONModel(oData[PhoneModel]);
@@ -71,15 +70,9 @@ sap.ui.define([
 
 // Navigation Back to Phone Page
     onNavBackPhonePage: function () {
-        var oHistory = sap.ui.core.routing.History.getInstance();
-        var sPreviousHash = oHistory.getPreviousHash();
 
-        if (sPreviousHash !== undefined) {
-            window.history.go(-1); // Navigate back in browser history
-        } else {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RoutePhonePage", {}, true); // Navigate to a default route if no history exists
-        }
+            oRouter.navTo("RoutePhonePage", {}, true); 
     }
 
 

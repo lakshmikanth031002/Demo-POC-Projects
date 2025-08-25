@@ -1,44 +1,87 @@
-<mvc:View controllerName="ladera.mobiles.controller.CatalogOrderPage"
+<mvc:View 
+    controllerName="ladera.mobiles.controller.CatalogOrderPage"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     height="100%">
-<Page class="catalogOrderPage" showHeader="false">
-    <VBox>
-        <HBox>
-            <HBox class="CimageHbox" width="50%" height="150px">
-            <Button icon="sap-icon://nav-back" press="onNavBackMainPage"/>
-            <Image src="Images/Company Name.png" width="150px" height="40px"/>
-            </HBox>
-            <!-- <HBox>
-            <MenuButton icon="sap-icon://person-placeholder" >
-			    <Menu>
-				    <MenuItem text="Settings" icon="sap-icon://action-settings" press="onPress"/>
-				    <MenuItem text="About" icon="sap-icon://high-priority" press="onPress" />
-				    <MenuItem text="Sign Out" icon="sap-icon://log" press="onPress" />
-			    </Menu>
-		    </MenuButton>
-            </HBox> -->
-        </HBox>
-    </VBox>
-    <VBox>
-        <HBox width="100%" justifyContent="Center" alignContent="Center">
-            <VBox class="categoryBox" width="23%">
-                <Image id="catImage" src="Images/Catalog/phone.png" width="90%" height="220px" press="onPhones"/>
-                <Text text="Phone" textAlign="Center" class="categoryText"/>
-            </VBox>
-            <VBox class="categoryBox" width="23%">
-                <Image id="catImage1" src="Images/Catalog/watch.png" width="90%" height="220px" press="onWatch"/>
-                <Text text="Watch" textAlign="Center" class="categoryText"/>
-            </VBox>
-            <VBox class="categoryBox" width="23%">
-                <Image id="catImage2" src="Images/Catalog/Airpods.png" width="90%" height="220px" press="onAirpods"/>
-                <Text text="Airpods" textAlign="Center" class="categoryText"/>
-            </VBox>
-            <VBox class="categoryBox" width="23%">
-                <Image id="catImage3" src="Images/Catalog/Charger.png" width="90%" height="220px" press="onCharger"/>
-                <Text text="Charger" textAlign="Center" class="categoryText"/>
-            </VBox>
-        </HBox>
-     </VBox>
-</Page>
+    
+    <Page class="catalogOrderPage">
+
+        <customHeader>
+            <Bar class="centerHeaderBar">
+                <contentLeft>
+                    <Button 
+                        class="menuButtons" 
+                        icon="sap-icon://nav-back" 
+                        press="onNavBackMainPage" />
+                    <Image 
+                        src="Images/Company Name.png" 
+                        width="150px" 
+                        height="40px" />
+                </contentLeft>
+
+                <contentRight>
+                    <Button 
+                        class="menuButtons" 
+                        icon="sap-icon://question-mark" 
+                        type="Transparent" 
+                        press="onUserMenuPress" />
+                    <Button 
+                        class="menuButtons" 
+                        icon="sap-icon://headset" 
+                        type="Transparent" 
+                        press="onUserMenuPress" />
+                    <MenuButton class="menuButtons" icon="sap-icon://person-placeholder">
+                        <Menu class="menuButtons">
+                            <MenuItem 
+                                text="Settings" 
+                                icon="sap-icon://action-settings" 
+                                press="onPress" />
+                            <MenuItem 
+                                text="About" 
+                                icon="sap-icon://high-priority" 
+                                press="onPress" />
+                            <MenuItem 
+                                text="Sign Out" 
+                                icon="sap-icon://log" 
+                                press="onPress" />
+                        </Menu>
+                    </MenuButton>
+                </contentRight>
+            </Bar>
+        </customHeader>
+
+        <FlexBox 
+            class="tileContainer"
+            direction="Row"
+            justifyContent="Center"
+            alignItems="Center"
+            wrap="Wrap">
+            
+            <GenericTile 
+                backgroundImage="Images/Catalog/phone.png"
+                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout smallBackgroundImage" 
+                press="onPhones">
+            </GenericTile>
+
+            <GenericTile 
+                backgroundImage="Images/Catalog/watch.png"
+                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout smallBackgroundImage" 
+                press="onWatch">
+            </GenericTile>
+
+            <GenericTile 
+                backgroundImage="Images/Catalog/Airpods.png"
+                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout smallBackgroundImage" 
+                press="onAirpods">
+            </GenericTile>
+
+            <GenericTile 
+                backgroundImage="Images/Catalog/Charger.png"
+                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout smallBackgroundImage" 
+                press="onCharger">
+            </GenericTile>
+
+        </FlexBox>
+
+    </Page>
 </mvc:View>
