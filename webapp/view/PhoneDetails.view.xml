@@ -29,9 +29,8 @@
                         <Text text="Get Upto" class="getUptoText"/>
                         <Text id="AmountField" text="{SelectedModelPrice>/}" class="priceText"/>
                         <HBox>
-               <Button width="150px" text="Buy Now" class="sapUiSmallMarginEnd" press="onBuyNowPress"/>
-                        <Button width="150px" text="Add to Cart" class="sapUiSmallMarginEnd" press="onAddToCartPress"/>
-                       
+                            <Button width="150px" text="Buy Now" class="sapUiSmallMarginEnd" press="onBuyNowPress"/>
+                            <Button width="150px" text="Add to Cart" class="sapUiSmallMarginEnd" press="onAddToCartPress"/>
                         </HBox>
           
                         <ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" backgroundDesign="Translucent">
