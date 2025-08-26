@@ -116,6 +116,11 @@
           "name": "RoutePhoneDetailsPage",
           "pattern": "RoutePhoneDetailsPage/{ModelName}",
           "target":  "TargetPhoneDetailsPage"
+        },
+        {
+          "name": "RouteCartPage",
+          "pattern": "RouteCartPage",
+          "target":  "TargetCartPage"
         }
       ],
       "targets": {
@@ -142,6 +147,10 @@
         "TargetPhoneDetailsPage": {
           "id": "PhoneDetails",
           "name": "PhoneDetails"
+        },
+        "TargetCartPage": {
+          "id": "CartPage",
+          "name": "CartPage"
         }
       }
     },

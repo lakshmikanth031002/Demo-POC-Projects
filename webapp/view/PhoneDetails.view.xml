@@ -7,15 +7,33 @@
     xmlns="sap.m"
     height="100%">
     
-    <Page showHeader="false" showNavButton="false" class="iphone15Layout">
+    <Page showNavButton="false" class="iphone15Layout">
+    <customHeader>
+                    <Bar class="centerHeaderBar">
+                        <contentLeft >
+                            <Button class="menuButtons" icon="sap-icon://nav-back" press="onNavBackPhonePage"/>
+                        <Image src="Images/Company Name.png" width="150px" height="40px"/>
+
+                        </contentLeft>
+                        <contentRight>
+                            <Button class="menuButtons" icon="sap-icon://cart" type="Transparent" press="onCheckCartPress"/>
+                        <MenuButton class="menuButtons" icon="sap-icon://person-placeholder">
+				            <Menu>
+					            <MenuItem text="Settings" icon="sap-icon://action-settings" press="onPress"/>
+					            <MenuItem text="About" icon="sap-icon://high-priority" press="onPress" />
+					            <MenuItem text="Sign Out" icon="sap-icon://log" press="onPress" />
+				            </Menu>
+		                </MenuButton>
+                        </contentRight>
+                    </Bar>
+                </customHeader>
         <content>
             <FlexBox direction="Column" justifyContent="Center" alignItems="Center" class="sapUiResponsivePadding">
                 <!-- Row FlexBox for Image and Details -->
                 <FlexBox direction="Row" wrap="Wrap" justifyContent="Center" alignItems="Start" class="sapUiMediumMargin">
-                    
+                
                     <!-- Image + Buttons Section -->
                     <VBox width="100%" alignItems="Center" justifyContent="Center">
-                        <Button icon="sap-icon://nav-back" press="onNavBackPhonePage" class="sapUiTinyMarginBottom"/>
                         <Image id="iPhoneFullImage" src="{phoneData>/0/imageUrl}" height="350px" width="350px"/>
                         <HBox justifyContent="Center" alignItems="Center" class="sapUiSmallMarginTop">
                             <Button width="150px" text="Ram/Storage" class="sapUiSmallMarginEnd" press="onRamStoragePress"/>

@@ -1,0 +1,71 @@
+<mvc:View
+    controllerName="ladera.mobiles.controller.CartPage"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:table="sap.ui.table"
+>
+    <Page id="CartPage" showHeader="false">
+		 <Toolbar>
+            <content>
+            <Title text="Shopping Cart"/>
+			<ToolbarSpacer/>
+			<Button icon="sap-icon://delete" press="onDeleteEmployee"/>
+            </content>
+        </Toolbar>
+        <table:Table rows="{cartModel>/cartItems}"
+				     selectionMode="MultiToggle">
+
+            <table:columns>
+                <table:Column width="15rem">
+                    <Label text="Product" />
+                    <table:template>
+						<Image src="{cartModel>image}" width="150px" height="150px"/>
+					</table:template>
+                </table:Column>
+                <table:Column width="10rem">
+                    <Label text="Product Name" />
+                    <table:template>
+						<Text text="{cartModel>name}" />
+					</table:template>
+                </table:Column>
+                <table:Column width="10rem">
+                    <Label text="Quantity" />
+                    <table:template>
+						<HBox alignItems="Center">
+                            <Button icon="sap-icon://less" press="onDecreaseQuantity" />
+                            <Input value="{cartModel>quantity}" width="3rem" textAlign="Center" editable="false"/>
+                            <Button icon="sap-icon://add" press="onIncreaseQuantity" />
+                        </HBox>
+					</table:template>
+                </table:Column>
+                <table:Column width="10rem">
+                    <Label text="Product Price" />
+                    <table:template>
+						<Text text="{cartModel>price}" />
+					</table:template>
+                </table:Column>
+            </table:columns>
+
+        </table:Table>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+                <Text
+                    id="totalPriceValue"
+                    text="{= 'Total: ₹' + ${cartModel>/totalAmount}}"
+                    class="sapUiTinyMarginBegin" />
+				<Button
+					id="proceedButton"
+					type="Accept"
+					text="Buy Now"
+					enabled="{
+						path: 'cartProducts>/cartEntries',
+						formatter: '.formatter.hasItems'
+					}"
+					visible="{cfg>/notInDelete}"
+					press=".onBuyNowButtonPress"/>
+			</Toolbar>
+		</footer>
+    </Page>
+</mvc:View>

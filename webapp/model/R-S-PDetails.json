@@ -189,7 +189,7 @@
   "iPhone 16 Pro Max": [
     {"RAM": "8 GB", "Storage": "256 GB", "PriceINR": "₹132,900"},
     {"RAM": "8 GB", "Storage": "512 GB", "PriceINR": "₹154,900"},
-    {"RAM": "8 GB", "Storage": "1 TB", "PriceINR": "₹169,900"}
+    {"RAM": "8 GB", "Storage": "1 TB",    "PriceINR": "₹169,900"}
   ],
   "iPhone 16e": [
     {"RAM": "8 GB", "Storage": "128 GB", "PriceINR": "₹53,600"},

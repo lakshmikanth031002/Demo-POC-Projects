@@ -13,6 +13,7 @@ sap.ui.define([
         },
 
         init() {
+
             // call the base component's init function
             UIComponent.prototype.init.apply(this, arguments);
 
@@ -21,6 +22,16 @@ sap.ui.define([
 
             // enable routing
             this.getRouter().initialize();
+
+            var oCartModel = new sap.ui.model.json.JSONModel({
+                cartItems: []
+            });
+
+            this.setModel(oCartModel, "cartModel");
+
+
+
+
         }
     });
 });
