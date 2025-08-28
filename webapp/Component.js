@@ -23,12 +23,13 @@ sap.ui.define([
             // enable routing
             this.getRouter().initialize();
 
+
+            // Cart Model Json Value
             var oCartModel = new sap.ui.model.json.JSONModel({
                 cartItems: []
             });
 
             this.setModel(oCartModel, "cartModel");
-
 
 
 

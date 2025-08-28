@@ -1,8 +1,9 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-    "sap/ui/model/Filter"
-], (Controller, MessageToast, Filter) => {
+    "sap/ui/model/Filter",
+    "sap/ui/core/Fragment"
+], (Controller, MessageToast, Filter, Fragment) => {
     "use strict";
 
     return Controller.extend("ladera.mobiles.controller.PhoneDetails", {
@@ -63,6 +64,8 @@ sap.ui.define([
             // Update the text binding (optional, if you want to set text directly)
             this.getView().byId("AmountField").setText(oSelectedData.PriceINR.toString());
 
+            this._selectedVariant = oSelectedData.RAM + " / " + oSelectedData.Storage;
+
             // Close the dialog
             this.RamStorage.close();
         },
@@ -84,42 +87,130 @@ sap.ui.define([
             oRouter.navTo("RouteCartPage");
         },
 
+        // Add to Cart Pop Over Call
+        onAddToCartPopOverCall: function (oEvent) {
+            var oButton = oEvent.getSource(),
+                oView = this.getView();
+
+            var sProductName = oView.getModel("phoneData").getProperty("/modelName");
+            var sProductPrice = oView.byId("AmountField").getText();
+            var sVariant = this._selectedVariant;
+
+            if (sProductPrice) {
+
+                if (!this._pPopover) {
+                    this._pPopover = Fragment.load({
+                        id: oView.getId(),
+                        name: "ladera.mobiles.view.QuantitySelect",
+                        controller: this
+                    }).then(function (oPopover) {
+                        oView.addDependent(oPopover);
+                        oPopover.bindElement("/ProductCollection/0");
+                        return oPopover;
+                    });
+                }
+                this._pPopover.then(function (oPopover) {
+
+                    Fragment.byId(oView.getId(), "productNameText").setText(sProductName);
+                    Fragment.byId(oView.getId(), "productPriceText").setText(sProductPrice);
+                    Fragment.byId(oView.getId(), "variantText").setText(sVariant);
+
+                    oPopover.openBy(oButton);
+                });
+
+            } else {
+
+                sap.m.MessageToast.show("Please Select the Varient(Ram/Storage)!");
+            }
+
+
+        },
+
         // Add to Cart
         onAddToCartPress: function () {
 
             var oView = this.getView();
+            var oFragmentId = oView.getId();
 
-            // Get the cart model
-            var oCartModel = this.getOwnerComponent().getModel("cartModel");
-            var aCartItems = oCartModel.getProperty("/cartItems");
+            var sProductName = Fragment.byId(oFragmentId, "productNameText").getText();
+            var sVariant = Fragment.byId(oFragmentId, "variantText").getText();
+            var sPrice = Fragment.byId(oFragmentId, "productPriceText").getText();
+            var sQuantity = Fragment.byId(oFragmentId, "quantityInput").getValue();
 
-            // Get product details
+              if (typeof sPrice === "string") {
+                const rawPrice = sPrice.replace(/[₹,~]/g, "");
+                var numericPrice = parseInt(rawPrice, 10);
+              }
+
+            if (!sQuantity || isNaN(sQuantity) || parseInt(sQuantity) <= 0) {
+                sap.m.MessageToast.show("Please enter a valid quantity");
+                return;
+            }
+
+            var iQuantity = parseInt(sQuantity);
+
             var oProductData = oView.getModel("phoneData").getData();
-            var sImage = oProductData[0].imageUrl;
-            var sName = oProductData.modelName;
-            var sPrice = oView.byId("AmountField").getText();
-
-            var oNewItem = {
+            var sImage = oProductData[0].imageUrl; // Because phoneData>0/imageUrl
+            var oCartItem = {
                 image: sImage,
-                name: sName,
-                price: sPrice
+                name: sProductName,
+                varient: sVariant,
+                price: sPrice,
+                Quantity: iQuantity,
+                priceQuantity: numericPrice * iQuantity
             };
 
-            // Push to cart
-            aCartItems.push(oNewItem);
+            // Add to cart model
+            var oCartModel = this.getOwnerComponent().getModel("cartModel");
+            var aCartItems = oCartModel.getProperty("/cartItems") || [];
+            aCartItems.push(oCartItem);
             oCartModel.setProperty("/cartItems", aCartItems);
 
-            // Optional: Toast message
+            // Calculate total amount
+            var iTotal = aCartItems.reduce((sum, item) => {
+                return sum + item.priceQuantity;
+            }, 0);
+            oCartModel.setProperty("/totalAmount", iTotal);
+
+            // Show confirmation
             sap.m.MessageToast.show("Added to cart!");
 
+            // Close the popover
+            this.byId("addToCartPopover").close();
+
+        },
+
+
+        // Add to Cart PopOver Close
+        onAddToCartCancelPress: function () {
+            this.byId("addToCartPopover").close();
         },
 
         // Fragment Open Comparison
         onComparisonPress: function () {
-            this.oModel = this.getOwnerComponent().oModels.Phones.Images
-            var oView = this.getView();
-            oView.setModel(this.oModel);
-            this.oSF = oView.byId("searchField");
+
+            if (this._selectedVariant) {
+
+                var sVariant = this._selectedVariant;
+            var phone1Data = {
+                
+                image : this.getView().oModels.phoneData.oData[0].imageUrl,
+                name  : this.getView().oModels.phoneData.oData.modelName,
+                varient : sVariant,
+                price : this.getView().byId("AmountField").getText(),
+                processor : this.getView().oModels.phoneData.oData[0].keyspec[0].value,
+                battery : this.getView().oModels.phoneData.oData[0].battery[0].value,       
+                display : this.getView().oModels.phoneData.oData[0].display[0].value,
+                refreshrate : this.getView().oModels.phoneData.oData[0].display[3].value,
+                height :  this.getView().oModels.phoneData.oData[0].design[0].value,
+                width : this.getView().oModels.phoneData.oData[0].design[1].value,
+                thickness : this.getView().oModels.phoneData.oData[0].design[2].value,
+                weight : this.getView().oModels.phoneData.oData[0].design[3].value
+
+            }
+
+            var Model = new sap.ui.model.json.JSONModel(phone1Data);
+            this.getView().setModel(Model, "Phone1");
 
             if (!this.Comparison) {
                 this.Comparison = new sap.ui.xmlfragment("ladera.mobiles.view.Comparison", this);
@@ -127,40 +218,15 @@ sap.ui.define([
             }
             console.log(this.Comparison);
             this.Comparison.open();
-
-        },
-
-        // Fragment Search Validation
-        onSearch: function (event) {
-            var oItem = event.getParameter("suggestionItem");
-            if (oItem) {
-                MessageToast.show("Search for: " + oItem.getText());
+                
             } else {
-                MessageToast.show("Search is fired!");
+                sap.m.MessageToast.show("Please Select the Varient(Ram/Storage)!");
             }
+            
+
         },
 
-        onSuggest: function (event) {
-            var sValue = event.getParameter("query"),
-                aFilters = [];
 
-            if (sValue) {
-                aFilters = [
-                    new Filter([
-                        new Filter("ProductId", function (sText) {
-                            return (sText || "").toUpperCase().indexOf(sValue.toUpperCase()) > -1;
-                        }),
-                        new Filter("Name", function (sDes) {
-                            return (sDes || "").toUpperCase().indexOf(sValue.toUpperCase()) > -1;
-                        })
-                    ], false)
-                ];
-            }
-
-            var oSearchField = event.getSource();
-            oSearchField.getBinding("suggestionItems").filter(aFilters);
-            oSearchField.suggest();
-        }
 
 
     });

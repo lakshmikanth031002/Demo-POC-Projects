@@ -40,23 +40,22 @@
 			<VBox>
 				<Image
 					src="{
-						path : 'PictureUrl',
+						path : 'Phone1>/image',
 						formatter : '.formatter.pictureUrl'
 					}"
 					alt="{i18n>comparisonAlternativeImageText}"
 					densityAware="false"
 					class="sapUiSmallMarginTop"
-					width="100%"
-					height="100%">
+					width="200px">
 					<detailBox>
 						<LightBox>
 							<imageContent>
 								<LightBoxItem
 									imageSrc="{
-										path : 'PictureUrl',
+										path : 'Phone1>/image',
 										formatter : '.formatter.pictureUrl'
 									}"
-									title="{Name}"/>
+									title="{Phone1>/name}"/>
 							</imageContent>
 						</LightBox>
 					</detailBox>
@@ -66,10 +65,10 @@
 				<ObjectListItem
 					class="productPrice welcomePrice"
 					number="{
-						path : 'Price',
+						path : 'Phone1>/price',
 						formatter : '.formatter.price'
 					}"
-					numberUnit="EUR">
+					numberUnit="INR">
 				</ObjectListItem>
 				<ObjectStatus
 					class="sapUiSmallMarginBottom"
@@ -99,29 +98,57 @@
 			</form:layout>
 			<form:formContainers>
 				<form:FormContainer>
-					<form:FormElement label="{i18n>productSupplierAttributeText}">
+					<form:FormElement label="Product Name">
 						<form:fields>
-							<Text text="{SupplierName}"/>
+							<Text text="{Phone1>/name}"/>
 						</form:fields>
 					</form:FormElement>
-					<form:FormElement label="{i18n>productDescriptionAttributeText}">
+					<form:FormElement label="Varient( Ram/Storage )">
 						<form:fields>
-							<Text text="{ShortDescription}"/>
+							<Text text="{Phone1>/varient}"/>
 						</form:fields>
 					</form:FormElement>
-					<form:FormElement label="{i18n>productWeightAttributeText}">
+					<form:FormElement label="Processor">
 						<form:fields>
-							<Text text="{Weight} {WeightUnit}"/>
+							<Text text="{Phone1>/processor}"/>
 						</form:fields>
 					</form:FormElement>
-					<form:FormElement label="{i18n>productMeasuresAttributeText}">
+					<form:FormElement label="Battery">
 						<form:fields>
-							<Text text="{DimensionWidth} {Unit}, {DimensionDepth} {Unit}, {DimensionHeight} {Unit}"/>
+							<Text text="{Phone1>/battery}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Display">
+						<form:fields>
+							<Text text="{Phone1>/display}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Refresh rate">
+						<form:fields>
+							<Text text="{Phone1>/refreshrate}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Height / Width">
+						<form:fields>
+							<Text text="{Phone1>/height} / {Phone1>/width}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Thickness">
+						<form:fields>
+							<Text text="{Phone1>/thickness}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Weight">
+						<form:fields>
+							<Text text="{Phone1>/weight}"/>
 						</form:fields>
 					</form:FormElement>
 				</form:FormContainer>
 			</form:formContainers>
 		</form:Form>
+
+
+		
 	</Panel>
  </Dialog>
 </core:FragmentDefinition> 

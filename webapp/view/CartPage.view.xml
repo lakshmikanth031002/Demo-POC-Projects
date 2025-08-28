@@ -32,13 +32,20 @@
 					</table:template>
                 </table:Column>
                 <table:Column width="10rem" hAlign="Center">
+                    <Label text="Varient(Ram/Storage)" />
+                    <table:template>
+						<Text text="{cartModel>varient}" />
+					</table:template>
+                </table:Column>
+                <table:Column width="10rem" hAlign="Center">
                     <Label text="Quantity" />
                     <table:template>
-						<HBox alignItems="Center" justifyContent="Center">
+                        <Text  text="{cartModel>Quantity}"/>
+						<!-- <HBox alignItems="Center" justifyContent="Center">
                             <Button icon="sap-icon://less" press="onDecreaseQuantity" />
                             <Input value="{cartModel>quantity}" width="3rem" textAlign="Center" editable="false"/>
                             <Button icon="sap-icon://add" press="onIncreaseQuantity" />
-                        </HBox>
+                        </HBox> -->
 					</table:template>
                 </table:Column>
                 <table:Column width="10rem" hAlign="Center">

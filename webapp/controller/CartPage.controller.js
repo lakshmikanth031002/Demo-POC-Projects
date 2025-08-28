@@ -1,6 +1,7 @@
 sap.ui.define([
-  "sap/ui/core/mvc/Controller"
-], (Controller) => {
+  "sap/ui/core/mvc/Controller",
+  "sap/m/MessageToast",
+], (Controller,MessageToast) => {
   "use strict";
 
   return Controller.extend("ladera.mobiles.controller.CartPage", {
@@ -14,60 +15,62 @@ sap.ui.define([
       oRouter.navTo("RoutePhoneDetailsPage");
     },
 
-////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////// Increase and Decrease Quantity Function
 
-    // Increase the Quantity 
-    onIncreaseQuantity: function (oEvent) {
-      const oSource = oEvent.getSource().getBindingContext("cartModel");
-      const sPath = oSource.getPath();
-      const oModel = oSource.getModel();
-      const oItem = oModel.getProperty(sPath);
+    //// Increase the Quantity 
+    
+    // onIncreaseQuantity: function (oEvent) {
+    //   const oSource = oEvent.getSource().getBindingContext("cartModel");
+    //   const sPath = oSource.getPath();
+    //   const oModel = oSource.getModel();
+    //   const oItem = oModel.getProperty(sPath);
 
-      if (typeof oItem.price === "string") {
-        const rawPrice = oItem.price.replace(/[₹,~]/g, "");
-        var numericPrice = parseInt(rawPrice, 10);
-      }
+    //   if (typeof oItem.price === "string") {
+    //     const rawPrice = oItem.price.replace(/[₹,~]/g, "");
+    //     var numericPrice = parseInt(rawPrice, 10);
+    //   }
 
-      oItem.quantity = (oItem.quantity || 0) + 1;
-      oItem.priceQuantity = oItem.quantity * numericPrice;
-      if (oItem.totalAmount) {
-        oItem.totalAmount = numericPrice + oModel.oData.totalAmount;
-      } else if (oModel.oData.totalAmount) {
-        oItem.totalAmount = numericPrice + oModel.oData.totalAmount;
-      }
-      else {
-        oItem.totalAmount = oItem.quantity * numericPrice
-      }
-      oModel.setProperty(sPath + "/quantity", oItem.quantity);
-      oModel.setProperty("/totalAmount", oItem.totalAmount);
-      oModel.setProperty("/priceQuantity", oItem.priceQuantity);
+    //   oItem.quantity = (oItem.quantity || 0) + 1;
+    //   oItem.priceQuantity = oItem.quantity * numericPrice;
+    //   if (oItem.totalAmount) {
+    //     oItem.totalAmount = numericPrice + oModel.oData.totalAmount;
+    //   } else if (oModel.oData.totalAmount) {
+    //     oItem.totalAmount = numericPrice + oModel.oData.totalAmount;
+    //   }
+    //   else {
+    //     oItem.totalAmount = oItem.quantity * numericPrice
+    //   }
+    //   oModel.setProperty(sPath + "/quantity", oItem.quantity);
+    //   oModel.setProperty("/totalAmount", oItem.totalAmount);
+    //   oModel.setProperty("/priceQuantity", oItem.priceQuantity);
 
-    },
+    // },
 
-    // Decrease the Quantity 
-    onDecreaseQuantity: function (oEvent) {
-      const oSource = oEvent.getSource().getBindingContext("cartModel");
-      const sPath = oSource.getPath();
-      const oModel = oSource.getModel();
-      const oItem = oModel.getProperty(sPath);
+    //// Decrease the Quantity 
 
-      if (typeof oItem.price === "string") {
-        const rawPrice = oItem.price.replace(/[₹,~]/g, "");
-        var numericPrice = parseInt(rawPrice, 10);
-      }
+    // onDecreaseQuantity: function (oEvent) {
+    //   const oSource = oEvent.getSource().getBindingContext("cartModel");
+    //   const sPath = oSource.getPath();
+    //   const oModel = oSource.getModel();
+    //   const oItem = oModel.getProperty(sPath);
 
-      if (oItem.quantity > 1 || oItem.quantity === 1) {
-        oItem.quantity -= 1;
-        oItem.totalAmount = oModel.oData.totalAmount - numericPrice;
-        oItem.priceQuantity = oItem.quantity * numericPrice;
+    //   if (typeof oItem.price === "string") {
+    //     const rawPrice = oItem.price.replace(/[₹,~]/g, "");
+    //     var numericPrice = parseInt(rawPrice, 10);
+    //   }
 
-        oModel.setProperty(sPath + "/quantity", oItem.quantity);
-        oModel.setProperty("/totalAmount", oItem.totalAmount);
-        oModel.setProperty("/priceQuantity", oItem.priceQuantity);
+    //   if (oItem.quantity > 1 || oItem.quantity === 1) {
+    //     oItem.quantity -= 1;
+    //     oItem.totalAmount = oModel.oData.totalAmount - numericPrice;
+    //     oItem.priceQuantity = oItem.quantity * numericPrice;
 
-      }
-    },
-////////////////////////////////////////////////////////////////////////////////////////////
+    //     oModel.setProperty(sPath + "/quantity", oItem.quantity);
+    //     oModel.setProperty("/totalAmount", oItem.totalAmount);
+    //     oModel.setProperty("/priceQuantity", oItem.priceQuantity);
+
+    //   }
+    // },
+/////////////////////////////////////////////// Increase and Decrease Quantity Function
 
     // Delete Cart Items
     onDeleteCartItems: function () {

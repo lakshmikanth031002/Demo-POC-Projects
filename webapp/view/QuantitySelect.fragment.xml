@@ -2,7 +2,7 @@
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core">
 	<ResponsivePopover
-		id="myPopover"
+		id="addToCartPopover"
 		title="Add to Cart"
 		class="sapUiContentPadding"
 		placement="Bottom" >
@@ -16,19 +16,19 @@
 			<VBox width="500px">
 				<HBox class="inbox" width="270px">
 					<Text class="inbox" text="Product Name:" width="100px" textAlign="End"/>
-					<Text class="inbox" text="{}" width="100px" textAlign="End"/>
+					<Text id="productNameText" class="inbox" text="{}" width="150px" textAlign="Begin"/>
 				</HBox>
 				<HBox class="inbox" width="270px">
                     <Text class="inbox" text="Varient:" width="100px" textAlign="End"/>
-					<Text class="inbox" text="{}" width="100px" textAlign="End"/>
+					<Text id="variantText" class="inbox" text="{}" width="150px" textAlign="Begin"/>
                 </HBox>
 				<HBox class="inbox" width="270px">
 					<Text class="inbox" text="Price:" width="100px" textAlign="End"/>
-					<Text class="inbox" text="{}"    width="100px" textAlign="End"/>
+					<Text id="productPriceText" class="inbox" text="{}" width="150px" textAlign="Begin"/>
 				</HBox>
 				<HBox class="inbox" width="270px">
 					<Text class="inbox" text="Quantity:" width="100px" textAlign="End"/>
-                	<Input value="{cartModel>quantity}" width="3rem" textAlign="Center" editable="true"/>
+                	<Input id="quantityInput" type="Number" value="" width="3rem" textAlign="Center" editable="true"/>
                 </HBox>
 			</VBox>
 		</content>
