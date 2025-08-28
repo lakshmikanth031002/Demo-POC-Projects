@@ -137,10 +137,10 @@ sap.ui.define([
             var sPrice = Fragment.byId(oFragmentId, "productPriceText").getText();
             var sQuantity = Fragment.byId(oFragmentId, "quantityInput").getValue();
 
-              if (typeof sPrice === "string") {
+            if (typeof sPrice === "string") {
                 const rawPrice = sPrice.replace(/[₹,~]/g, "");
                 var numericPrice = parseInt(rawPrice, 10);
-              }
+            }
 
             if (!sQuantity || isNaN(sQuantity) || parseInt(sQuantity) <= 0) {
                 sap.m.MessageToast.show("Please enter a valid quantity");
@@ -192,39 +192,72 @@ sap.ui.define([
             if (this._selectedVariant) {
 
                 var sVariant = this._selectedVariant;
-            var phone1Data = {
-                
-                image : this.getView().oModels.phoneData.oData[0].imageUrl,
-                name  : this.getView().oModels.phoneData.oData.modelName,
-                varient : sVariant,
-                price : this.getView().byId("AmountField").getText(),
-                processor : this.getView().oModels.phoneData.oData[0].keyspec[0].value,
-                battery : this.getView().oModels.phoneData.oData[0].battery[0].value,       
-                display : this.getView().oModels.phoneData.oData[0].display[0].value,
-                refreshrate : this.getView().oModels.phoneData.oData[0].display[3].value,
-                height :  this.getView().oModels.phoneData.oData[0].design[0].value,
-                width : this.getView().oModels.phoneData.oData[0].design[1].value,
-                thickness : this.getView().oModels.phoneData.oData[0].design[2].value,
-                weight : this.getView().oModels.phoneData.oData[0].design[3].value
+                var phone1Data = {
 
-            }
+                    image: this.getView().oModels.phoneData.oData[0].imageUrl,
+                    name: this.getView().oModels.phoneData.oData.modelName,
+                    varient: sVariant,
+                    price: this.getView().byId("AmountField").getText(),
+                    processor: this.getView().oModels.phoneData.oData[0].keyspec[0].value,
+                    battery: this.getView().oModels.phoneData.oData[0].battery[0].value,
+                    display: this.getView().oModels.phoneData.oData[0].display[0].value,
+                    refreshrate: this.getView().oModels.phoneData.oData[0].display[3].value,
+                    height: this.getView().oModels.phoneData.oData[0].design[0].value,
+                    width: this.getView().oModels.phoneData.oData[0].design[1].value,
+                    thickness: this.getView().oModels.phoneData.oData[0].design[2].value,
+                    weight: this.getView().oModels.phoneData.oData[0].design[3].value
 
-            var Model = new sap.ui.model.json.JSONModel(phone1Data);
-            this.getView().setModel(Model, "Phone1");
+                }
 
-            if (!this.Comparison) {
-                this.Comparison = new sap.ui.xmlfragment("ladera.mobiles.view.Comparison", this);
-                this.getView().addDependent(this.Comparison);
-            }
-            console.log(this.Comparison);
-            this.Comparison.open();
-                
+                var Model = new sap.ui.model.json.JSONModel(phone1Data);
+                this.getView().setModel(Model, "Phone1");
+
+                if (!this.Comparison) {
+                    this.Comparison = new sap.ui.xmlfragment("ladera.mobiles.view.Comparison", this);
+                    this.getView().addDependent(this.Comparison);
+                }
+                console.log(this.Comparison);
+                this.Comparison.open();
+
             } else {
                 sap.m.MessageToast.show("Please Select the Varient(Ram/Storage)!");
             }
-            
+
 
         },
+
+        // Search Compare Prodcut
+        onSearchCompareProduct: function (evt) {
+            var searchPhone = evt.getParameter("value");
+            var oData = this.getOwnerComponent().oModels.Specification.getData();
+            var record = oData[searchPhone];
+
+            var phone2Data = {
+
+                    image: record[0].imageUrl,
+                    name: searchPhone,
+                    varient: sVariant,
+                    price: this.getView().byId("AmountField").getText(),
+                    processor: record[0].keyspec[0].value,
+                    battery:record[0].battery[0].value,
+                    display: record[0].display[0].value,
+                    refreshrate: record[0].display[3].value,
+                    height: record[0].design[0].value,
+                    width: record[0].design[1].value,
+                    thickness: record[0].design[2].value,
+                    weight:record[0].design[3].value 
+
+                }
+
+                var Model2 = new sap.ui.model.json.JSONModel(phone2Data);
+                this.getView().setModel(Model2, "Phone2");
+
+        },
+
+        // Close the Compare Fragment
+        onCloseComparefragment: function () {
+            this.Comparison.close();
+        }
 
 
 

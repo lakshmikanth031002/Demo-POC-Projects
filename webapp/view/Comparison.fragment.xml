@@ -16,9 +16,9 @@
 		<headerToolbar>
 			<Toolbar>
 				<Label text="Select Comparison Product"/>
-					<SearchField
+					<!-- <SearchField
 			id="searchField"
-			width="50%"
+			width="30%"
 			placeholder="Search for..."
 			enableSuggestions="true"
 			search=".onSearch"
@@ -28,14 +28,23 @@
         		sorter: { path: 'name' }
 			}">
 			<SuggestionItem text="{Phones>name}"/>
-		</SearchField>
+		</SearchField> -->
+		<SearchField width="20%" change="onSearchCompareProduct" /> 
 				<ToolbarSpacer/>
 				<Button
+					icon="sap-icon://sys-enter"
+					press=".onSelectCompareProduct"
+					tooltip="{i18n>removeFromComparisonTooltip}"/>
+				<Button
 					icon="sap-icon://sys-cancel"
-					press=".onRemoveComparison"
+					press="onCloseComparefragment"
 					tooltip="{i18n>removeFromComparisonTooltip}"/>
 			</Toolbar>
 		</headerToolbar>
+
+<!--Main HBoc  -->
+<HBox>
+<VBox width="50%">
 		<HBox class="comparebox">
 			<VBox>
 				<Image
@@ -147,8 +156,123 @@
 			</form:formContainers>
 		</form:Form>
 
+</VBox>
 
-		
+<!-- Phone 2 Details -->
+
+<VBox width="50%">
+		<HBox class="comparebox">
+			<VBox>
+				<Image
+					src="{
+						path : 'Phone1>/image',
+						formatter : '.formatter.pictureUrl'
+					}"
+					alt="{i18n>comparisonAlternativeImageText}"
+					densityAware="false"
+					class="sapUiSmallMarginTop"
+					width="200px">
+					<detailBox>
+						<LightBox>
+							<imageContent>
+								<LightBoxItem
+									imageSrc="{
+										path : 'Phone1>/image',
+										formatter : '.formatter.pictureUrl'
+									}"
+									title="{Phone1>/name}"/>
+							</imageContent>
+						</LightBox>
+					</detailBox>
+				</Image>
+			</VBox>
+			<VBox alignItems="End">
+				<ObjectListItem
+					class="productPrice welcomePrice"
+					number="{
+						path : 'Phone1>/price',
+						formatter : '.formatter.price'
+					}"
+					numberUnit="INR">
+				</ObjectListItem>
+				<ObjectStatus
+					class="sapUiSmallMarginBottom"
+					text="{
+						path : 'Status',
+						formatter : '.formatter.statusText'
+					}"
+					state="{
+						path : 'Status',
+						formatter : '.formatter.statusState'
+					}"/>
+			</VBox>
+		</HBox>
+		<form:Form editable="false">
+			<form:layout>
+				<form:ResponsiveGridLayout
+					labelSpanXL="12"
+					labelSpanL="12"
+					labelSpanM="12"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					singleContainerFullSize="false"/>
+			</form:layout>
+			<form:formContainers>
+				<form:FormContainer>
+					<form:FormElement label="Product Name">
+						<form:fields>
+							<Text text="{Phone1>/name}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Varient( Ram/Storage )">
+						<form:fields>
+							<Text text="{Phone1>/varient}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Processor">
+						<form:fields>
+							<Text text="{Phone1>/processor}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Battery">
+						<form:fields>
+							<Text text="{Phone1>/battery}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Display">
+						<form:fields>
+							<Text text="{Phone1>/display}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Refresh rate">
+						<form:fields>
+							<Text text="{Phone1>/refreshrate}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Height / Width">
+						<form:fields>
+							<Text text="{Phone1>/height} / {Phone1>/width}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Thickness">
+						<form:fields>
+							<Text text="{Phone1>/thickness}"/>
+						</form:fields>
+					</form:FormElement>
+					<form:FormElement label="Weight">
+						<form:fields>
+							<Text text="{Phone1>/weight}"/>
+						</form:fields>
+					</form:FormElement>
+				</form:FormContainer>
+			</form:formContainers>
+		</form:Form>
+</VBox>
+</HBox>
 	</Panel>
  </Dialog>
 </core:FragmentDefinition> 
