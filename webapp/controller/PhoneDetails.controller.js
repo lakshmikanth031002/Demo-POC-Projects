@@ -1,6 +1,8 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], (Controller) => {
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast",
+    "sap/ui/model/Filter"
+], (Controller, MessageToast, Filter) => {
     "use strict";
 
     return Controller.extend("ladera.mobiles.controller.PhoneDetails", {
@@ -14,14 +16,12 @@ sap.ui.define([
                 this.getView().addDependent(this.RamStorage);
             }
 
-
-
         },
         _objPatternMatched: function (oEvent) {
 
             // Clear the Amount value
             this.getView().byId("AmountField").setText("");
-            
+
             var GetModelName = oEvent.getParameter("arguments").ModelName;
             var oData = this.getOwnerComponent().oModels.Specification.getData();
             var record = oData[GetModelName];
@@ -97,15 +97,11 @@ sap.ui.define([
             var oProductData = oView.getModel("phoneData").getData();
             var sImage = oProductData[0].imageUrl;
             var sName = oProductData.modelName;
-            // var sRam = oProductData.general.find(x => x.category === "RAM")?.value || "-";
-            // var sStorage = oProductData.general.find(x => x.category === "Storage")?.value || "-";
             var sPrice = oView.byId("AmountField").getText();
 
             var oNewItem = {
                 image: sImage,
                 name: sName,
-                // ram: sRam,
-                // storage: sStorage,
                 price: sPrice
             };
 
@@ -116,11 +112,54 @@ sap.ui.define([
             // Optional: Toast message
             sap.m.MessageToast.show("Added to cart!");
 
-            // Optional: Navigate to cart
-            // var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            // oRouter.navTo("RouteCartPage")
+        },
 
+        // Fragment Open Comparison
+        onComparisonPress: function () {
+            this.oModel = this.getOwnerComponent().oModels.Phones.Images
+            var oView = this.getView();
+            oView.setModel(this.oModel);
+            this.oSF = oView.byId("searchField");
 
+            if (!this.Comparison) {
+                this.Comparison = new sap.ui.xmlfragment("ladera.mobiles.view.Comparison", this);
+                this.getView().addDependent(this.Comparison);
+            }
+            console.log(this.Comparison);
+            this.Comparison.open();
+
+        },
+
+        // Fragment Search Validation
+        onSearch: function (event) {
+            var oItem = event.getParameter("suggestionItem");
+            if (oItem) {
+                MessageToast.show("Search for: " + oItem.getText());
+            } else {
+                MessageToast.show("Search is fired!");
+            }
+        },
+
+        onSuggest: function (event) {
+            var sValue = event.getParameter("query"),
+                aFilters = [];
+
+            if (sValue) {
+                aFilters = [
+                    new Filter([
+                        new Filter("ProductId", function (sText) {
+                            return (sText || "").toUpperCase().indexOf(sValue.toUpperCase()) > -1;
+                        }),
+                        new Filter("Name", function (sDes) {
+                            return (sDes || "").toUpperCase().indexOf(sValue.toUpperCase()) > -1;
+                        })
+                    ], false)
+                ];
+            }
+
+            var oSearchField = event.getSource();
+            oSearchField.getBinding("suggestionItems").filter(aFilters);
+            oSearchField.suggest();
         }
 
 

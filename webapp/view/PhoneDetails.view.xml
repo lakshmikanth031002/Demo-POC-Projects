@@ -37,7 +37,7 @@
                         <Image id="iPhoneFullImage" src="{phoneData>/0/imageUrl}" height="350px" width="350px"/>
                         <HBox justifyContent="Center" alignItems="Center" class="sapUiSmallMarginTop">
                             <Button width="150px" text="Ram/Storage" class="sapUiSmallMarginEnd" press="onRamStoragePress"/>
-                            <Button width="150px" text="Compare" class="sapUiSmallMarginEnd" press="onComparePress"/>
+                            <Button width="150px" text="Compare" class="sapUiSmallMarginEnd" press="onComparisonPress"/>
                         </HBox>
                     </VBox>
 
@@ -45,7 +45,7 @@
                     <VBox width="100%" alignItems="Center" class="sapUiSmallMargin">
                         <Title text="{phoneData>/modelName}" class="specTitle"/>
                         <Text text="Get Upto" class="getUptoText"/>
-                        <Text id="AmountField" text="{SelectedModelPrice>/}" class="priceText"/>
+                        <Text id="AmountField" text="{ /}" class="priceText"/>
                         <HBox>
                             <Button width="150px" text="Buy Now" class="sapUiSmallMarginEnd" press="onBuyNowPress"/>
                             <Button width="150px" text="Add to Cart" class="sapUiSmallMarginEnd" press="onAddToCartPress"/>

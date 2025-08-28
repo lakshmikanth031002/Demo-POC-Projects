@@ -58,3 +58,7 @@ html, body, .sapUiBody { height: 100%; margin: 0; overflow: hidden; }
 .customLegend .sapMObjStatusText { font-size: 0.875rem; padding-left: 2px; padding-right: 12px; }
 
 .redAddButton .sapMBtnIcon {  color: red !important; font-size: 1.2rem !important; }
+
+.greenText{ font-size: 17px; font-weight: bold; color: rgb(107, 176, 3);}
+.redText{ font-size: 15px; font-weight: bold; color: #ff4040;}
+

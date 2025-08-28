@@ -4,45 +4,53 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:table="sap.ui.table"
+    xmlns:core="sap.ui.core"
+    core:require="{ formatter: 'ladera/mobiles/util/formatter' }"
 >
     <Page id="CartPage" showHeader="false">
 		 <Toolbar>
             <content>
             <Title text="Shopping Cart"/>
 			<ToolbarSpacer/>
-			<Button icon="sap-icon://delete" press="onDeleteEmployee"/>
+			<Button icon="sap-icon://delete" press="onDeleteCartItems"/>
             </content>
         </Toolbar>
         <table:Table rows="{cartModel>/cartItems}"
 				     selectionMode="MultiToggle">
 
             <table:columns>
-                <table:Column width="15rem">
-                    <Label text="Product" />
+                <table:Column width="12rem" hAlign="Center">
+                    <Label text="Product"/>
                     <table:template>
-						<Image src="{cartModel>image}" width="150px" height="150px"/>
+						<Image src="{cartModel>image}" width="150px" height="150px" />
 					</table:template>
                 </table:Column>
-                <table:Column width="10rem">
+                <table:Column width="10rem" hAlign="Center">
                     <Label text="Product Name" />
                     <table:template>
-						<Text text="{cartModel>name}" />
+						<Text text="{cartModel>name}" class="redText"/>
 					</table:template>
                 </table:Column>
-                <table:Column width="10rem">
+                <table:Column width="10rem" hAlign="Center">
                     <Label text="Quantity" />
                     <table:template>
-						<HBox alignItems="Center">
+						<HBox alignItems="Center" justifyContent="Center">
                             <Button icon="sap-icon://less" press="onDecreaseQuantity" />
                             <Input value="{cartModel>quantity}" width="3rem" textAlign="Center" editable="false"/>
                             <Button icon="sap-icon://add" press="onIncreaseQuantity" />
                         </HBox>
 					</table:template>
                 </table:Column>
-                <table:Column width="10rem">
+                <table:Column width="10rem" hAlign="Center">
                     <Label text="Product Price" />
                     <table:template>
-						<Text text="{cartModel>price}" />
+						<Text text="{cartModel>price}" class="greenText"/>
+					</table:template>
+                </table:Column>
+                <table:Column width="15rem" hAlign="Center">
+                    <Label text="Product Price * Quantity" />
+                    <table:template>
+                        <Text text="{ path: 'cartModel>priceQuantity', formatter: 'formatter.formatINRCurrency' }" class="greenText"/>
 					</table:template>
                 </table:Column>
             </table:columns>
@@ -53,7 +61,7 @@
 				<ToolbarSpacer/>
                 <Text
                     id="totalPriceValue"
-                    text="{= 'Total: ₹' + ${cartModel>/totalAmount}}"
+                    text="Total: { path: 'cartModel>/totalAmount' , formatter: 'formatter.formatINRCurrency'}"
                     class="sapUiTinyMarginBegin" />
 				<Button
 					id="proceedButton"

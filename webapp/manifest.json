@@ -52,6 +52,10 @@
           "bundleName": "ladera.mobiles.i18n.i18n"
         }
       },
+      "PhoneNames" :{
+        "type" : "sap.ui.model.json.JSONModel",
+        "uri" : "model/PhoneNames.json"
+      },
       "Phones" : {
         "type" : "sap.ui.model.json.JSONModel",
         "uri" : "model/Phones.json"

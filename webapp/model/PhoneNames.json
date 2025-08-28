@@ -1,0 +1,157 @@
+{
+    "PhoneNames": [
+        {
+            "key" : "iPhone6",
+            "name" : "iPhone 6"
+        },
+        {
+            "key" : "iPhone6Plus",
+            "name" : "iPhone 6 Plus"
+        },
+        {
+            "key" : "iPhone6s",
+            "name" : "iPhone 6s"
+        },
+        {
+            "key" : "iPhone6sPlus",
+            "name" : "iPhone 6s Plus"
+        },
+        {
+            "key" : "iPhone7",
+            "name" : "iPhone 7"
+        },
+        {
+            "key" : "iPhone7Plus",
+            "name" : "iPhone 7 Plus"
+        },
+        {
+            "key" : "iPhoneSE",
+            "name" : "iPhone SE"
+        },
+        {
+            "key" : "iPhoneSE2020",
+            "name" : "iPhone SE 2020"
+        },
+        {
+            "key" : "iPhoneSE2022",
+            "name" : "iPhone SE 2022"
+        },
+        {
+            "key" : "iPhone8",
+            "name" : "iPhone 8"
+        },
+        {
+            "key" : "iPhone8Plus",
+            "name" : "iPhone 8 Plus"
+        },
+        {
+            "key" : "iPhone11",
+            "name" : "iPhone 11"
+        },
+        {
+            "key" : "iPhone11Pro",
+            "name" : "iPhone 11 Pro"
+        },
+        {
+            "key" : "iPhone12",
+            "name" : "iPhone 12"
+        },
+        {
+            "key" : "iPhone12Mini",
+            "name" : "iPhone 12 Mini"
+        },
+        {
+            "key" : "iPhone12Pro",
+            "name" : "iPhone 12 Pro"
+        },
+        {
+            "key" : "iPhone12ProMax",
+            "name" : "iPhone 12 Pro Max"
+        },
+        {
+            "key" : "iPhone13",
+            "name" : "iPhone 13"
+        },
+        {
+            "key" : "iPhone13Mini",
+            "name" : "iPhone 13 Mini"
+        },
+        {
+            "key" : "iPhone13Pro",
+            "name" : "iPhone 13 Pro"
+        },
+        {
+            "key" : "iPhone13ProMax",
+            "name" : "iPhone 13 Pro Max"
+        },
+        {
+            "key" : "iPhone14",
+            "name" : "iPhone 14"
+        },
+        {
+            "key" : "iPhone14Plus",
+            "name" : "iPhone 14 Plus"
+        },
+        {
+            "key" : "iPhone14Pro",
+            "name" : "iPhone 14 Pro"
+        },
+        {
+            "key" : "iPhone14ProMax",
+            "name" : "iPhone 14 Pro Max"
+        },
+        {
+            "key" : "iPhone15",
+            "name" : "iPhone 15"
+        },
+        {
+            "key" : "iPhone15Plus",
+            "name" : "iPhone 15 Plus"
+        },
+        {
+            "key" : "iPhone15Pro",
+            "name" : "iPhone 15 Pro"
+        },
+        {
+            "key" : "iPhone15ProMax",
+            "name" : "iPhone 15 Pro Max"
+        },
+        {
+            "key" : "iPhone16",
+            "name" : "iPhone 16"
+        },
+        {
+            "key" : "iPhone16Plus",
+            "name" : "iPhone 16 Plus"
+        },
+        {
+            "key" : "iPhone16Pro",
+            "name" : "iPhone 16 Pro"
+        },
+        {
+            "key" : "iPhone16ProMax",
+            "name" : "iPhone 16 Pro Max"
+        },
+        {
+            "key" : "iPhone16e",
+            "name": "iPhone 16e"
+        },
+        {
+            "key" : "iPhoneX",
+            "name" : "iPhone X"
+        },
+        {
+            "key" : "iPhoneXR",
+            "name" : "iPhone XR"
+        },
+        {
+            "key" : "iPhoneXS",
+            "name" : "iPhone XS"
+        },
+        {
+            "key" : "iPhoneXSMax",
+            "name" : "iPhone XS Max"
+        }
+
+    ]
+}

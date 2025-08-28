@@ -45,6 +45,8 @@ sap.ui.define([
             this.getView().byId("Flexboxvalue").setModel(oImagesModel, "Images");
 
         },
+
+// Navigation Phone Details page 
         onCategoryPress: function (oEvent) {
             var SelectedModel = oEvent.getSource().mProperties.header;
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
