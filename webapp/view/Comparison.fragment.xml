@@ -16,25 +16,11 @@
 		<headerToolbar>
 			<Toolbar>
 				<Label text="Select Comparison Product"/>
-					<!-- <SearchField
-			id="searchField"
-			width="30%"
-			placeholder="Search for..."
-			enableSuggestions="true"
-			search=".onSearch"
-			suggest=".onSuggest"
-			suggestionItems="{
-				path: 'Phones>/Images',
-        		sorter: { path: 'name' }
-			}">
-			<SuggestionItem text="{Phones>name}"/>
-		</SearchField> -->
-		<SearchField width="20%" change="onSearchCompareProduct" /> 
+		<!-- <SearchField width="20%" change="onSearchCompareProduct" />  -->
+			<Input id="inputValue" value="{}" showValueHelp="true"
+			       valueHelpRequest="onValueHelpRequest" width="250px"/>
+    
 				<ToolbarSpacer/>
-				<Button
-					icon="sap-icon://sys-enter"
-					press=".onSelectCompareProduct"
-					tooltip="{i18n>removeFromComparisonTooltip}"/>
 				<Button
 					icon="sap-icon://sys-cancel"
 					press="onCloseComparefragment"
@@ -44,6 +30,7 @@
 
 <!--Main HBoc  -->
 <HBox>
+<!-- Phone 1 -->
 <VBox width="50%">
 		<HBox class="comparebox">
 			<VBox>
@@ -72,7 +59,7 @@
 			</VBox>
 			<VBox alignItems="End">
 				<ObjectListItem
-					class="productPrice welcomePrice"
+					class="greenText"
 					number="{
 						path : 'Phone1>/price',
 						formatter : '.formatter.price'
@@ -158,14 +145,14 @@
 
 </VBox>
 
-<!-- Phone 2 Details -->
+<!-- Phone 2 -->
 
-<VBox width="50%">
+<VBox width="50%" id="comparisonVBox">
 		<HBox class="comparebox">
 			<VBox>
 				<Image
 					src="{
-						path : 'Phone1>/image',
+						path : 'Phone2>/image',
 						formatter : '.formatter.pictureUrl'
 					}"
 					alt="{i18n>comparisonAlternativeImageText}"
@@ -177,20 +164,19 @@
 							<imageContent>
 								<LightBoxItem
 									imageSrc="{
-										path : 'Phone1>/image',
+										path : 'Phone2>/image',
 										formatter : '.formatter.pictureUrl'
 									}"
-									title="{Phone1>/name}"/>
+									title="{Phone2>/name}"/>
 							</imageContent>
 						</LightBox>
 					</detailBox>
 				</Image>
 			</VBox>
-			<VBox alignItems="End">
+			<VBox alignItems="End" class="greenText">
 				<ObjectListItem
-					class="productPrice welcomePrice"
 					number="{
-						path : 'Phone1>/price',
+						path : 'Phone2>/price',
 						formatter : '.formatter.price'
 					}"
 					numberUnit="INR">
@@ -225,47 +211,47 @@
 				<form:FormContainer>
 					<form:FormElement label="Product Name">
 						<form:fields>
-							<Text text="{Phone1>/name}"/>
+							<Text text="{Phone2>/name}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Varient( Ram/Storage )">
 						<form:fields>
-							<Text text="{Phone1>/varient}"/>
+							<Text text="{Phone2>/ram} / {Phone2>/storage}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Processor">
 						<form:fields>
-							<Text text="{Phone1>/processor}"/>
+							<Text text="{Phone2>/processor}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Battery">
 						<form:fields>
-							<Text text="{Phone1>/battery}"/>
+							<Text text="{Phone2>/battery}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Display">
 						<form:fields>
-							<Text text="{Phone1>/display}"/>
+							<Text text="{Phone2>/display}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Refresh rate">
 						<form:fields>
-							<Text text="{Phone1>/refreshrate}"/>
+							<Text text="{Phone2>/refreshrate}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Height / Width">
 						<form:fields>
-							<Text text="{Phone1>/height} / {Phone1>/width}"/>
+							<Text text="{Phone2>/height} / {Phone1>/width}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Thickness">
 						<form:fields>
-							<Text text="{Phone1>/thickness}"/>
+							<Text text="{Phone2>/thickness}"/>
 						</form:fields>
 					</form:FormElement>
 					<form:FormElement label="Weight">
 						<form:fields>
-							<Text text="{Phone1>/weight}"/>
+							<Text text="{Phone2>/weight}"/>
 						</form:fields>
 					</form:FormElement>
 				</form:FormContainer>
